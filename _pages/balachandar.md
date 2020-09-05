@@ -5,7 +5,7 @@ layout: students
 ---
 # K. Balachandar 
 
-![Balachandar](/gphani/assets/images/balachandar.jpg)
+![Balachandar](../assets/images/balachandar.jpg)
 
 Roll No: MM05D007  
 Thesis title: Microstructure and mechanical property characterization of beta titanium alloy weldments   

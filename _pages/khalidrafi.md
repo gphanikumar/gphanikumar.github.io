@@ -4,7 +4,7 @@ layout: students
 title: H. Khalid Rafi
 ---
 # H. Khalid Rafi
-![Rafi](/gphani/assets/images/khalidrafi.jpeg)  
+![Rafi](../assets/images/khalidrafi.jpeg)  
 Roll No: MM08D002  
 Jointly guided by Prof. K. Prasad Rao   
 Thesis title: Studies on solid state coatings by friction surfacing   
