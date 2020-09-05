@@ -23,8 +23,9 @@ email: gphani@iitm.ac.in
 description: >- # this means to ignore newlines until "baseurl:"
   Website of Gandham Phanikumar, Professor, Department of Metallurgical and
   Materials Engineering (MME), Indian Institute of Technology Madras (IITM).
-baseurl: "/gphani" # the subpath of your site, e.g. /blog
-url: "https://mme.iitm.ac.in" # the base hostname & protocol for your site, e.g. http://example.com
+  #baseurl: "/gphani" # the subpath of your site, e.g. /blog
+  #url: "https://mme.iitm.ac.in" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://gphanikumar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  gphanikumar
 
