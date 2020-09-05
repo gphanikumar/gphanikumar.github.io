@@ -1,0 +1,872 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>JabRef references</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+<!--
+// QuickSearch script for JabRef HTML export (no Abstract/BibTeX)
+// Version: 3.0
+//
+// Copyright (c) 2006-2011, Mark Schenk
+//
+// This software is distributed under a Creative Commons Attribution 3.0 License
+// http://creativecommons.org/licenses/by/3.0/
+//
+// Features:
+// - intuitive find-as-you-type searching
+//    ~ case insensitive
+//    ~ ignore diacritics (optional)
+//
+// - search with/without Regular Expressions
+// - match BibTeX key
+//
+
+// Search settings
+var noSquiggles = true; 	// ignore diacritics when searching
+var searchRegExp = false; 	// enable RegExp searches
+
+
+if (window.addEventListener) {
+	window.addEventListener("load",initSearch,false); }
+else if (window.attachEvent) {
+	window.attachEvent("onload", initSearch); }
+
+function initSearch() {
+	// check for quick search table and searchfield
+	if (!document.getElementById('qs_table')||!document.getElementById('quicksearch')) { return; }
+
+	// load all the rows and sort into arrays
+	loadTableData();
+	
+	//find the query field
+	qsfield = document.getElementById('qs_field');
+
+	// previous search term; used for speed optimisation
+	prevSearch = '';
+
+	//find statistics location
+	stats = document.getElementById('stat');
+	setStatistics(-1);
+	
+	// set up preferences
+	initPreferences();
+
+	// shows the searchfield
+	document.getElementById('quicksearch').style.display = 'block';
+	document.getElementById('qs_field').onkeyup = quickSearch;
+}
+
+function loadTableData() {
+	// find table and appropriate rows
+	searchTable = document.getElementById('qs_table');
+	var allRows = searchTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+	// split all rows into entryRows and infoRows (e.g. abstract, review, bibtex)
+	entryRows = new Array();
+
+	// get data from each row
+	entryRowsData = new Array();
+	
+	BibTeXKeys = new Array();
+	
+	for (var i=0, k=0, j=0; i<allRows.length;i++) {
+		if (allRows[i].className.match(/entry/)) {
+			entryRows[j] = allRows[i];
+			entryRowsData[j] = stripDiacritics(getTextContent(allRows[i]));
+			allRows[i].id ? BibTeXKeys[j] = allRows[i].id : allRows[i].id = 'autokey_'+j;
+			j ++;
+		}
+	}
+	//number of entries and rows
+	numEntries = entryRows.length;
+}
+
+function quickSearch(){
+	
+	tInput = qsfield;
+
+	if (tInput.value.length == 0) {
+		showAll();
+		setStatistics(-1);
+		qsfield.className = '';
+		return;
+	} else {
+		t = stripDiacritics(tInput.value);
+
+		if(!searchRegExp) { t = escapeRegExp(t); }
+			
+		// only search for valid RegExp
+		try {
+			textRegExp = new RegExp(t,"i");
+			qsfield.className = '';
+		}
+			catch(err) {
+			prevSearch = tInput.value;
+			qsfield.className = 'invalidsearch';
+			return;
+		}
+	}
+	
+	// count number of hits
+	var hits = 0;
+
+	// start looping through all entry rows
+	for (var i = 0; cRow = entryRows[i]; i++){
+
+		// only show search the cells if it isn't already hidden OR if the search term is getting shorter, then search all
+		if(cRow.className.indexOf('noshow')==-1 || tInput.value.length <= prevSearch.length){
+			var found = false; 
+
+			if (entryRowsData[i].search(textRegExp) != -1 || BibTeXKeys[i].search(textRegExp) != -1){ 
+				found = true;
+			}
+			
+			if (found){
+				cRow.className = 'entry show';
+				hits++;
+			} else {
+				cRow.className = 'entry noshow';
+			}
+		}
+	}
+
+	// update statistics
+	setStatistics(hits)
+	
+	// set previous search value
+	prevSearch = tInput.value;
+}
+
+
+// Strip Diacritics from text
+// http://stackoverflow.com/questions/990904/javascript-remove-accents-in-strings
+
+// String containing replacement characters for stripping accents 
+var stripstring = 
+    'AAAAAAACEEEEIIII'+
+    'DNOOOOO.OUUUUY..'+
+    'aaaaaaaceeeeiiii'+
+    'dnooooo.ouuuuy.y'+
+    'AaAaAaCcCcCcCcDd'+
+    'DdEeEeEeEeEeGgGg'+
+    'GgGgHhHhIiIiIiIi'+
+    'IiIiJjKkkLlLlLlL'+
+    'lJlNnNnNnnNnOoOo'+
+    'OoOoRrRrRrSsSsSs'+
+    'SsTtTtTtUuUuUuUu'+
+    'UuUuWwYyYZzZzZz.';
+
+function stripDiacritics(str){
+
+    if(noSquiggles==false){
+        return str;
+    }
+
+    var answer='';
+    for(var i=0;i<str.length;i++){
+        var ch=str[i];
+        var chindex=ch.charCodeAt(0)-192;   // Index of character code in the strip string
+        if(chindex>=0 && chindex<stripstring.length){
+            // Character is within our table, so we can strip the accent...
+            var outch=stripstring.charAt(chindex);
+            // ...unless it was shown as a '.'
+            if(outch!='.')ch=outch;
+        }
+        answer+=ch;
+    }
+    return answer;
+}
+
+// http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+// NOTE: must escape every \ in the export code because of the JabRef Export...
+function escapeRegExp(str) {
+  return str.replace(/[-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+}
+
+function setStatistics (hits) {
+	if(hits < 0) { hits=numEntries; }
+	if(stats) { stats.firstChild.data = hits + '/' + numEntries}
+}
+
+function getTextContent(node) {
+	// Function written by Arve Bersvendsen
+	// http://www.virtuelvis.com
+	
+	if (node.nodeType == 3) {
+	return node.nodeValue;
+	} // text node
+	if (node.nodeType == 1 && node.className != "infolinks") { // element node
+	var text = [];
+	for (var chld = node.firstChild;chld;chld=chld.nextSibling) {
+		text.push(getTextContent(chld));
+	}
+	return text.join("");
+	} return ""; // some other node, won't contain text nodes.
+}
+
+function showAll(){
+	for (var i = 0; i < numEntries; i++){ entryRows[i].className = 'entry show'; }
+}
+
+function clearQS() {
+	qsfield.value = '';
+	showAll();
+}
+
+function redoQS(){
+	showAll();
+	quickSearch(qsfield);
+}
+
+function updateSetting(obj){
+	var option = obj.id;
+	var checked = obj.value;
+
+	switch(option)
+	 {
+	 case "opt_useRegExp":
+	   searchRegExp=!searchRegExp;
+	   redoQS();
+	   break;
+	 case "opt_noAccents":
+	   noSquiggles=!noSquiggles;
+	   loadTableData();
+	   redoQS();
+	   break;
+	 }
+}
+
+function initPreferences(){
+	if(noSquiggles){document.getElementById("opt_noAccents").checked = true;}
+	if(searchRegExp){document.getElementById("opt_useRegExp").checked = true;}
+}
+
+function toggleSettings(){
+	var togglebutton = document.getElementById('showsettings');
+	var settings = document.getElementById('settings');
+	
+	if(settings.className == "hidden"){
+		settings.className = "show";
+		togglebutton.innerText = "close settings";
+		togglebutton.textContent = "close settings";
+	}else{
+		settings.className = "hidden";
+		togglebutton.innerText = "settings...";		
+		togglebutton.textContent = "settings...";
+	}
+}
+
+-->
+</script>
+<style type="text/css">
+body { background-color: white; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.2; padding: 1em; color: #2E2E2E; margin: auto 2em; }
+
+form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
+span#searchstat {padding-left: 1em;}
+
+div#settings { margin-top:0.7em; /* border-bottom: 1px transparent solid; background-color: #efefef; border: 1px grey solid; */ }
+div#settings ul {margin: 0; padding: 0; }
+div#settings li {margin: 0; padding: 0 1em 0 0; display: inline; list-style: none; }
+div#settings li + li { border-left: 2px #efefef solid; padding-left: 0.5em;}
+div#settings input { margin-bottom: 0px;}
+
+div#settings.hidden {display:none;}
+
+#showsettings { border: 1px grey solid; padding: 0 0.5em; float:right; line-height: 1.6em; text-align: right; }
+#showsettings:hover { cursor: pointer; }
+
+.invalidsearch { background-color: red; }
+input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
+
+table { width: 100%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none; }
+th, td { border: 1px gray solid; border-width: 1px 1px; padding: 0.5em; vertical-align: top; text-align: left; }
+th { background-color: #efefef; }
+td + td, th + th { border-left: none; }
+
+td a { color: navy; text-decoration: none; }
+td a:hover  { text-decoration: underline; }
+
+tr.noshow { display: none;}
+tr.highlight td { background-color: #EFEFEF; border-top: 2px #2E2E2E solid; font-weight: bold; }
+tr.abstract td, tr.review td, tr.bibtex td { background-color: #EFEFEF; text-align: justify; border-bottom: 2px #2E2E2E solid; }
+tr.nextshow td { border-bottom: 1px gray solid; }
+
+tr.bibtex pre { width: 100%; overflow: auto; white-space: pre-wrap;}
+p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
+
+@media print {
+	p.infolinks, #qs_settings, #quicksearch, t.bibtex { display: none !important; }
+	tr { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<form action="" id="quicksearch">
+<input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..." /> <input type="button" onclick="clearQS()" value="clear" />
+<span id="searchstat">Matching entries: <span id="stat">0</span></span>
+<div id="showsettings" onclick="toggleSettings()">settings...</div>
+<div id="settings" class="hidden">
+<ul>
+<li><input type="checkbox" class="search_setting" id="opt_useRegExp" onchange="updateSetting(this)"><label for="opt_useRegExp"> use RegExp</label></li>
+<li><input type="checkbox" class="search_setting" id="opt_noAccents" onchange="updateSetting(this)"><label for="opt_noAccents"> ignore accents</label></li>
+</ul>
+</div>
+</form>
+<table id="qs_table" border="1">
+<thead><tr><th width="20%">Author</th><th width="30%">Title</th><th width="5%">Year</th><th width="30%">Journal/Proceedings</th><th width="10%">Reftype</th><th width="5%">DOI/URL</th></tr></thead>
+<tbody><tr id="Balachandar2009" class="entry">
+	<td>Balachandar, K., Subramanya Sarma, V., null Pant, B. and Phanikumar, G.</td>
+	<td>Microstructure and Mechanical Properties of Gas-Tungsten-Arc-Welded Ti-15-3 Beta Titanium Alloy</td>
+	<td>2009</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. 40, pp. 2685-2693&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-009-9952-8">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Biswas2004464" class="entry">
+	<td>Biswas, K., Phanikumar, G., Chattopadhyay, K., Volkmann, T., Funke, O., Holland-Moritz, D. and Herlach, D.</td>
+	<td>Rapid solidification behaviour of undercooled levited Fe-Ge alloy droplets</td>
+	<td>2004</td>
+	<td>Materials Science and Engineering A<br/>Vol. 375-377(1-2 SPEC. ISS.), pp. 464-467&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.msea.2003.10.047">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Biswas200712" class="entry">
+	<td>Biswas, K., Phanikumar, G., Herlach, D. and Chattopadhyay, K.</td>
+	<td>Non-equilibrium solidification of concentrated Fe-Ge alloys</td>
+	<td>2007</td>
+	<td>Materials Science and Engineering A<br/>Vol. 448-451, pp. 12-17&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.msea.2006.02.286">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Biswas20073817" class="entry">
+	<td>Biswas, K., Phanikumar, G., Holland-Moritz, D., Herlach, D. and Chattopadhyay, K.</td>
+	<td>Disorder trapping and grain refinement during solidification of undercooled Fe-18 at% Ge melts</td>
+	<td>2007</td>
+	<td>Philosophical Magazine<br/>Vol. 87(25), pp. 3817-3837&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1080/14786430701420549">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Bysakh20032621" class="entry">
+	<td>Bysakh, S., Mitra, S., Phanikumar, G., Mazumder, J., Dutta, P. and Chattopadhyay, K.</td>
+	<td>Characterization of microstructure in laser-surface-alloyed layers of aluminum on nickel</td>
+	<td>2003</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. 34 A(11), pp. 2621-2631&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-003-0021-4">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Chattopadhyay2001" class="entry">
+	<td>Chattopadhyay, K., Biswas, K., Bysakh, S., Phanikumar G., Weisheit A., Galun R. and Mordike, B.</td>
+	<td>Quasicrystalline coatings through laser processing: A study on process optimisation and microstructure evolution</td>
+	<td>2001</td>
+	<td>Materials Research Society Symposium - Proceedings<br/>Vol. 643, pp. K1531-K15312&nbsp;</td>
+	<td>conference</td>
+	<td><a href="http://dx.doi.org/10.1557/PROC-643-K15.3">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Chattopadhyay2001a" class="entry">
+	<td>Chattopadhyay, K., Sanyal, S., Phanikumar, G., Mordike, B. and Galun, R.</td>
+	<td>Microstructure study of laser surface cladding of bearing materials</td>
+	<td>2001</td>
+	<td>(388)Proceedings of Materials Week&nbsp;</td>
+	<td>conference</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Funke2006211" class="entry">
+	<td>Funke, O., Phanikumar, G., Galenko, P., Chernova, L., Reutzel, S., Kolbe, M. and Herlach, D.</td>
+	<td>Dendrite growth velocity in levitated undercooled nickel melts</td>
+	<td>2006</td>
+	<td>Journal of Crystal Growth<br/>Vol. 297(1), pp. 211-222&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.jcrysgro.2006.08.045">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Galenko2006431" class="entry">
+	<td>Galenko, P., Herlach, D., Phanikumar, G. and Funke, O.</td>
+	<td>Phase-field modeling of dendritic solidification in undercooled droplets processed by electromagnetic levitation</td>
+	<td>2006</td>
+	<td>Materials Science Forum<br/>Vol. 508, pp. 431-436&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.4028/www.scientific.net/MSF.508.431">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Galenko2007649" class="entry">
+	<td>Galenko, P., Phanikumar, G., Funke, O., Chernova, L., Reutzel, S., Kolbe, M. and Herlach, D.</td>
+	<td>Dendritic solidification and fragmentation in undercooled Ni-Zr alloys</td>
+	<td>2007</td>
+	<td>Materials Science and Engineering A<br/>Vol. 448-451, pp. 649-653&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.msea.2006.02.435">DOI</a> &nbsp;</td>
+</tr>
+<tr id="GeraldTennyson2015" class="entry">
+	<td>Gerald Tennyson, P., Karthik, G. and Phanikumar, G.</td>
+	<td>MPI + OpenCL implementation of a phase-field method incorporating CALPHAD description of Gibbs energies on heterogeneous computing</td>
+	<td>2015</td>
+	<td>Computer Physics Communications<br/>Vol. 186, pp. 48-64&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.cpc.2014.09.014">DOI</a> &nbsp;</td>
+</tr>
+<tr id="GeraldTennyson2010" class="entry">
+	<td>Gerald Tennyson, P., Kumar, P., Lakshmi, H., Phanikumar, G. and Dutta, P.</td>
+	<td>Experimental studies and phase field modeling of microstructure evolution during solidification with electromagnetic stirring</td>
+	<td>2010</td>
+	<td>Transactions of Nonferrous Metals Society of China (English Edition)<br/>Vol. 20(SUPPL. 3), pp. s774-s780&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/S1003-6326(10)60580-8">DOI</a> &nbsp;</td>
+</tr>
+<tr id="GeraldTennyson2011" class="entry">
+	<td>Gerald Tennyson, P. and Phanikumar, G.</td>
+	<td>Computational modelling of dendritic to globular transition using an isothermal binar phase-field model</td>
+	<td>2011</td>
+	<td>Transactions of the Indian Institute of Metals<br/>Vol. 64(1-2), pp. 251-254&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s12666-011-0050-4">DOI</a> <a href="http://www.springerlink.com/content/w4180u34170m52w4/">URL</a>&nbsp;</td>
+</tr>
+<tr id="Gupta2007299" class="entry">
+	<td>Gupta, A., Galun, R. and Phanikumar, G.</td>
+	<td>Microstructure evolution during laser surface cladding and remelting of Al-10wt%Bi-10wt%Cu</td>
+	<td>2007</td>
+	<td>Transactions of the Indian Institute of Metals<br/>Vol. 60(2-3), pp. 299-302&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.igcar.ernet.in/transiim/2007/vol60-2and3.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Herlach2004277" class="entry">
+	<td>Herlach, D., Funke, O., Gandham, P. and Galenko, P.</td>
+	<td>Free dendrite growth in undercooled melts: Experiments and modeling</td>
+	<td>2004</td>
+	<td>Solidification Processes and Microstructures: A Symposium in Honor of Wilfried Kurz(978-0-87339-572-4)Solidification Processes and Microstructures: A symposium in honor of Wilfried Kurz, pp. 277-288&nbsp;</td>
+	<td>conference</td>
+	<td><a href="http://as.wiley.com/WileyCDA/WileyTitle/productCd-0873395727,descCd-tableOfContents.html">URL</a>&nbsp;</td>
+</tr>
+<tr id="Kala2014a" class="entry">
+	<td>Kala, S., Prasad, N. and Phanikumar, G.</td>
+	<td>Numerical study of welding with trailing heat sink considering phase transformation effects</td>
+	<td>2014</td>
+	<td>Advanced Materials Research<br/>Vol. 875-877, pp. 2118-2122&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84896299669&partnerID=40&md5=2ef5661a3caea40ae1e8a58646f3d5f9">URL</a>&nbsp;</td>
+</tr>
+<tr id="Kala2013" class="entry">
+	<td>Kala, S., Prasad, N. and Phanikumar, G.</td>
+	<td>Numerical studies on effect of interpass time on distortion and residual stresses in multipass welding</td>
+	<td>2013</td>
+	<td>Advanced Materials Research<br/>Vol. 601, pp. 31-36&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84871706025&partnerID=40&md5=e4d0683cf5a216a01e1bf2e4a9ad7230">URL</a>&nbsp;</td>
+</tr>
+<tr id="Kala2014" class="entry">
+	<td>Kala, S., Siva Prasad, N. and Phanikumar, G.</td>
+	<td>Studies on multipass welding with trailing heat sink considering phase transformation</td>
+	<td>2014</td>
+	<td>Journal of Materials Processing Technology<br/>Vol. 214(6), pp. 1228-1235&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84893972954&partnerID=40&md5=9bffa8fc74df9a73e6cfa502d3bd7cea">URL</a>&nbsp;</td>
+</tr>
+<tr id="KhalidRafi2011" class="entry">
+	<td>Khalid Rafi, H., Balasubramaniam, K., Phanikumar, G. and Prasad Rao, K.</td>
+	<td>Thermal profiling using infrared thermography in friction surfacing</td>
+	<td>2011</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. ??, pp. ??&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-011-0750-8">DOI</a> &nbsp;</td>
+</tr>
+<tr id="KhalidRafi2010" class="entry">
+	<td>Khalid Rafi, H., Janaki Ram, G., Phanikumar, G. and Prasad Rao, K.</td>
+	<td>Friction surfacing of austenitic stainless steel on low carbon steel: Studies on the effects of traverse speed</td>
+	<td>2010</td>
+	<td><br/>Vol. 2World Congress on Engineering, pp. 1356-1360&nbsp;</td>
+	<td>conference</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="KhalidRafi2010864" class="entry">
+	<td>Khalid Rafi, H., Janaki Ram, G., Phanikumar, G. and Prasad Rao, K.</td>
+	<td>Microstructure and properties of friction surfaced stainless steel and tool steel coatings</td>
+	<td>2010</td>
+	<td>Materials Science Forum<br/>Vol. 638-642, pp. 864-869&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.4028/www.scientific.net/MSF.638-642.864">DOI</a> &nbsp;</td>
+</tr>
+<tr id="KhalidRafi2013" class="entry">
+	<td>Khalid Rafi, H., Kishore Babu, N., Phanikumar, G. and Prasad Rao, K.</td>
+	<td>Microstructural evolution during friction surfacing of austenitic stainless steel AISI 304 on low carbon steel</td>
+	<td>2013</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. 44(1), pp. 345-350&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-012-1366-3">DOI</a> <a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84871990551&partnerID=40&md5=5ec8a3d37d0e018f5626b9e606b8a629">URL</a>&nbsp;</td>
+</tr>
+<tr id="KhalidRafi2013a" class="entry">
+	<td>Khalid Rafi, H., Phanikumar, G. and Prasad Rao, K.</td>
+	<td>Corrosion resistance of friction surfaced AISI 304 stainless steel coatings</td>
+	<td>2013</td>
+	<td>Journal of Materials Engineering and Performance<br/>Vol. 22(2), pp. 366-370&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11665-012-0270-8">DOI</a> <a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84876329072&partnerID=40&md5=fcddf5b2cf392bf9b8c4b42c92c140e5">URL</a>&nbsp;</td>
+</tr>
+<tr id="KhalidRafi2011937" class="entry">
+	<td>Khalid Rafi, H., Phanikumar, G. and Prasad Rao, K.</td>
+	<td>Material flow visualization during friction surfacing</td>
+	<td>2011</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. 42(4), pp. 937-939&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-011-0614-2">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Kumar20022345" class="entry">
+	<td>Kumar, K., Phanikumar, G., null Dutta, P. and Chattopadhyay, K.</td>
+	<td>Microstructural development of dissimilar weldments: Case of MiG welding of Cu with Fe filler</td>
+	<td>2002</td>
+	<td>Journal of Materials Science<br/>Vol. 37(11), pp. 2345-2349&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1023/A:1015306408611">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Lierfeld2007689" class="entry">
+	<td>Lierfeld, T., Gandham, P., Kolbe, M., Schenk, T., Singer, H., Eggeler, G. and Herlach, D.</td>
+	<td>Particle incorporation in metallic melts during dendritic solidification-undercooling experiments under reduced gravity</td>
+	<td>2007</td>
+	<td>Materials Science and Engineering A<br/>Vol. 448-451, pp. 689-692&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.msea.2006.02.453">DOI</a> &nbsp;</td>
+</tr>
+<tr id="T.Maiwald2002" class="entry">
+	<td>Maiwald, T., Galun, R., Mordike, B.L., Chattopadhayay, K. and Phanikumar, G.</td>
+	<td>Laser Cladding with Alloy Systems with a Miscibility Gap in the Liquid State</td>
+	<td>2002</td>
+	<td>Proceedings of the International Conference on Advances in Materials and Materials Processing ICAMMP, pp. 831-835&nbsp;</td>
+	<td>conference</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="MohanRaj2002298" class="entry">
+	<td>Mohan Raj, P., Sarkar, S., Chakraborty, S., Phanikumar, G., Dutta, P. and Chattopadhyay, K.</td>
+	<td>Modelling of transport phenomena in laser surface alloying with distributed species mass source</td>
+	<td>2002</td>
+	<td>International Journal of Heat and Fluid Flow<br/>Vol. 23(3), pp. 298-307&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/S0142-727X(02)00177-7">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Nair2007579" class="entry">
+	<td>Nair, B., Phanikumar, G., Prasad Rao, K. and Sinha, P.</td>
+	<td>Improvement of mechanical properties of gas tungsten arc and electron beam welded AA2219 (Al-6 wt-%Cu) alloy</td>
+	<td>2007</td>
+	<td>Science and Technology of Welding and Joining<br/>Vol. 12(7), pp. 579-585&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1179/174329307X227210">DOI</a> <a href="http://openurl.ingenta.com/content?genre=article&issn=1362-1718&volume=12&issue=7&spage=579&epage=585">URL</a>&nbsp;</td>
+</tr>
+<tr id="Nair20104943" class="entry">
+	<td>Nair, B., Rakesh, S., Phanikumar, G., Rao, K. and Sinha, P.</td>
+	<td>Fracture toughness (J1C) of electron beam welded AA2219 alloy</td>
+	<td>2010</td>
+	<td>Materials and Design<br/>Vol. 31(10), pp. 4943-4950&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.matdes.2010.05.017">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Nath2015" class="entry">
+	<td>Nath, H. and Phanikumar, G.</td>
+	<td>Premartensite transition in Ni2FeGa Heusler alloy</td>
+	<td>2015</td>
+	<td>Materials Characterization<br/>Vol. 102, pp. 24-28&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.matchar.2015.02.012">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Nath2015a" class="entry">
+	<td>Nath, H. and Phanikumar, G.</td>
+	<td>Martensite transformation and magnetic properties of Ni-Fe-Ga Heusler alloys</td>
+	<td>2015</td>
+	<td>Metallurgical and Materials Transactions A<br/>Vol. 46A, pp. 4947&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-015-3098-7">DOI</a> <a href="http://link.springer.com/article/10.1007/s11661-015-3098-7">URL</a>&nbsp;</td>
+</tr>
+<tr id="Nath2015b" class="entry">
+	<td>Nath, H. and Phanikumar, G.</td>
+	<td>Microstructural, Magnetic and Electrical Properties of Ni2FeGa Heusler Alloys</td>
+	<td>2015</td>
+	<td>Transactions of the Indian Institute of Metals&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s12666-015-0691-9">DOI</a> <a href="http://link.springer.com/article/10.1007%2Fs12666-015-0691-9">URL</a>&nbsp;</td>
+</tr>
+<tr id="Nath2014" class="entry">
+	<td>Nath, H. and Phanikumar, G.</td>
+	<td>Microstructure and Phase Evolution of Ni2FeGa Heusler Alloy Extended to Different Degrees of Undercooling</td>
+	<td>2014</td>
+	<td>Materials Science Forum<br/>Vol. 790--791, pp. 2161-2170&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.4028/www.scientific.net/MSF.790-791.199">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Phanikumar2002" class="entry">
+	<td>Phanikumar, G.</td>
+	<td>Experimental and Computational Studies on Laser Processing of Dissimilar Metals</td>
+	<td>2002</td>
+	<td><i>School</i>: Indian Institute of Science, Bangalore&nbsp;</td>
+	<td>phdthesis</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Phanikumar1999" class="entry">
+	<td>Phanikumar, G., Basu, B., Chakraborty, S., Chattopadhay, K., Dutta, P. and Majumdar, J.</td>
+	<td>Laser Surface Alloying of Iron on Substrate: Experiments and Numerical Simulation</td>
+	<td>1999</td>
+	<td>Proceedings of Euromat 99: Symposium G5 - Surface Technology / Laser Surface Treatment&nbsp;</td>
+	<td>conference</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Phanikumar20053591" class="entry">
+	<td>Phanikumar, G., Biswas, K., Funke, O., Holland-Moritz, D., Herlach, D. and Chattopadhyay, K.</td>
+	<td>Solidification of undercooled peritectic Fe-Ge alloy</td>
+	<td>2005</td>
+	<td>Acta Materialia<br/>Vol. 53(13), pp. 3591-3600&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.actamat.2005.03.053">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Phanikumar200125" class="entry">
+	<td>Phanikumar, G. and Chattopadhyay, K.</td>
+	<td>Solidification microstructure development</td>
+	<td>2001</td>
+	<td>Sadhana - Academy Proceedings in Engineering Sciences<br/>Vol. 26(1-2), pp. 25-34&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/BF02728477">DOI</a> <a href="http://www.ias.ac.in/sadhana/Pdf2001FebApr/Pe926.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Phanikumar2011313" class="entry">
+	<td>Phanikumar, G., Chattopadhyay, K. and null Dutta, P.</td>
+	<td>Joining of dissimilar metals: Issues and modelling techniques</td>
+	<td>2011</td>
+	<td>Science and Technology of Welding and Joining<br/>Vol. 16(4), pp. 313-317&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1179/1362171811Y.0000000014">DOI</a> <a href="http://openurl.ingenta.com/content?genre=article&issn=1362-1718&volume=16&issue=4&spage=313&epage=317">URL</a>&nbsp;</td>
+</tr>
+<tr id="Phanikumar2001156" class="entry">
+	<td>Phanikumar, G., Chattopadhyay, K. and Dutta, P.</td>
+	<td>Modelling of transport phenomena in laser welding of dissimilar metals</td>
+	<td>2001</td>
+	<td>International Journal of Numerical Methods for Heat and Fluid Flow<br/>Vol. 11(2), pp. 156-171&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1108/09615530110381575">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Phanikumar2000847" class="entry">
+	<td>Phanikumar, G., Chattopadhyay, K. and Dutta, P.</td>
+	<td>Supercomputing applications in materials engineering</td>
+	<td>2000</td>
+	<td>Current Science<br/>Vol. 78(7), pp. 847-849&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.iisc.ernet.in/currsci/apr102000/surveys3.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Phanikumar2001" class="entry">
+	<td>Phanikumar, G., Dutta, P. and Chattopadhay, K.</td>
+	<td>Solidification microstructures in laser welding of dissimilar metals</td>
+	<td>2001</td>
+	<td>Proceedings of Second International Conference of Solidification Science and Processing, pp. 155-162&nbsp;</td>
+	<td>conference</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Phanikumar2000" class="entry">
+	<td>Phanikumar, G., Dutta, P. and Chattopadhyay, K.</td>
+	<td>Laser processing of dissimilar metals</td>
+	<td>2000</td>
+	<td>Proceedings of Int. Symposium on Materials Ageing and Life Management (ISOMALM)&nbsp;</td>
+	<td>conference</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Phanikumar2005158" class="entry">
+	<td>Phanikumar, G., Dutta, P. and Chattopadhyay, K.</td>
+	<td>Continuous welding of Cu-Ni dissimilar couple using CO2 laser</td>
+	<td>2005</td>
+	<td>Science and Technology of Welding and Joining<br/>Vol. 10(2), pp. 158-166&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1179/174329305X36043">DOI</a> <a href="http://openurl.ingenta.com/content?genre=article&issn=1362-1718&volume=10&issue=2&spage=158&epage=166">URL</a>&nbsp;</td>
+</tr>
+<tr id="Phanikumar2004339" class="entry">
+	<td>Phanikumar, G., Dutta, P. and Chattopadhyay, K.</td>
+	<td>Computational modeling of laser welding of Cu-Ni dissimilar couple</td>
+	<td>2004</td>
+	<td>Metallurgical and Materials Transactions B: Process Metallurgy and Materials Processing Science<br/>Vol. 35(2), pp. 339-350&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11663-004-0034-4">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Phanikumar200491" class="entry">
+	<td>Phanikumar, G., Dutta, P., Galun, R. and Chattopadhyay, K.</td>
+	<td>Microstructural evolution during remelting of laser surface alloyed hyper-monotectic Al-Bi alloy</td>
+	<td>2004</td>
+	<td>Materials Science and Engineering A<br/>Vol. 371(1-2), pp. 91-102&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.msea.2003.09.071">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Phanikumar20052137" class="entry">
+	<td>Phanikumar, G., Manjini, S., Dutta, P., Mazumder, J. and Chattopadhyay, K.</td>
+	<td>Characterization of a continuous CO2 laser-welded Fe-Cu dissimilar couple</td>
+	<td>2005</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. 36(8), pp. 2137-2147&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-005-0334-6">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Phanikumar1998461" class="entry">
+	<td>Phanikumar, G., Pardeshi, R., Chattopadhyay, K., Dutta, P. and Majumder, J.</td>
+	<td>Dissimilar Metal Welding of Copper Nickel Couple by Continuous Wave CO 2 Laser</td>
+	<td>1998</td>
+	<td>ASM Proceedings of the International Conference: Trends in Welding ResearchTrends in Welding Research, pp. 461-466&nbsp;</td>
+	<td>conference</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Prasad2012" class="entry">
+	<td>Prasad, R., Manivel Raja, M. and Phanikumar, G.</td>
+	<td>Structure and magnetic properties of Ni 2(Mn,Co)Ga Heusler alloys rapidly solidified by melt-spinning</td>
+	<td>2012</td>
+	<td>Intermetallics<br/>Vol. 25, pp. 42-47&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.intermet.2012.02.012">DOI</a> <a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84858119053&partnerID=40&md5=a859d48b415bd8ceb83021c6093cea9b">URL</a>&nbsp;</td>
+</tr>
+<tr id="Prasad2009215" class="entry">
+	<td>Prasad, R., Manivel Raja, M. and Phanikumar, G.</td>
+	<td>Microstructure and magnetic properties of rapidly solidified Ni 2(Mn,Fe)Ga Heusler alloys</td>
+	<td>2009</td>
+	<td>Advanced Materials Research<br/>Vol. 74, pp. 215-218&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.4028/www.scientific.net/AMR.74.215">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Prasad2011" class="entry">
+	<td>Prasad, R. and Phanikumar, G.</td>
+	<td>Phase evolution and properties of Ni50Co23Fe2Ga25 Heusler alloy undercooled by electromagnetic levitation</td>
+	<td>2011</td>
+	<td>Intermetallics<br/>Vol. 19, pp. 1705-1710&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.intermet.2011.07.009">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Prasad201035" class="entry">
+	<td>Prasad, R. and Phanikumar, G.</td>
+	<td>Martensite and nanocrystalline phase formation in rapidly solidified Ni2MnGa alloy by melt-spinning</td>
+	<td>2010</td>
+	<td>Materials Science Forum<br/>Vol. 649, pp. 35-40&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.4028/www.scientific.net/MSF.649.35">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Prasad20092553" class="entry">
+	<td>Prasad, R. and Phanikumar, G.</td>
+	<td>Amorphous and nano crystalline phase formation in Ni2MnGa ferromagnetic shape memory alloy synthesized by melt spinning</td>
+	<td>2009</td>
+	<td>Journal of Materials Science<br/>Vol. 44(10), pp. 2553-2559&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s10853-009-3333-y">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Prasad2014" class="entry">
+	<td>Prasad, R., Srinivas, M., Manivel Raja, M. and Phanikumar, G.</td>
+	<td>Microstructure and magnetic properties of Ni2(Mn,Fe)Ga heusler alloys rapidly solidified by melt spinning</td>
+	<td>2014</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. 45(4), pp. 2161-2170&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-013-2124-x">DOI</a> <a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84898826899&partnerID=40&md5=5f2a2bcdf8491b5ebdfd1ee3fe555c8a">URL</a>&nbsp;</td>
+</tr>
+<tr id="Rafi201182" class="entry">
+	<td>Rafi, H., Ram, G., Phanikumar, G. and Rao, K.</td>
+	<td>Microstructural evolution during friction surfacing of tool steel H13</td>
+	<td>2011</td>
+	<td>Materials and Design<br/>Vol. 32(1), pp. 82-87&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.matdes.2010.06.031">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Rafi2010" class="entry">
+	<td>Rafi, H., Ram, G., Phanikumar, G. and Rao, K.</td>
+	<td>Microstructure and tensile properties of friction welded aluminum alloy AA7075-T6</td>
+	<td>2010</td>
+	<td>Materials and Design<br/>Vol. 31(5), pp. 2375-2380&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.matdes.2009.11.065">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Rafi2010232" class="entry">
+	<td>Rafi, H., Ram, G., Phanikumar, G. and Rao, K.</td>
+	<td>Friction surfaced tool steel (H13) coatings on low carbon steel: A study on the effects of process parameters on coating characteristics and integrity</td>
+	<td>2010</td>
+	<td>Surface and Coatings Technology<br/>Vol. 205(1), pp. 232-242&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.surfcoat.2010.06.052">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Hru2015b" class="entry">
+	<td>Rahul, M. and Phanikumar, G.</td>
+	<td>Correlation of Microstructure With HAZ Welding Cycles Simulated in Ti-15-3 Alloy Using Gleeble 3800 and SYSWELD</td>
+	<td>2015</td>
+	<td>Materials Performance and Characterization&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1520/MPC20140065">DOI</a> <a href="http://www.astm.org/DIGITAL_LIBRARY/JOURNALS/MPC/PAGES/MPC20140065.htm">URL</a>&nbsp;</td>
+</tr>
+<tr id="R.Ramakrishnan2015" class="entry">
+	<td>Ramakrishnan, R., Phanikumar, G. and Sankarasubramanian, R.</td>
+	<td>Crystal-melt interface growth velocity of Ni-Zr alloys through molecular dynamics simulations</td>
+	<td>2015</td>
+	<td>Transactions of the Indian Institute of Metals&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s12666-015-0655-0">DOI</a> <a href="http://link.springer.com/article/10.1007/s12666-015-0655-0">URL</a>&nbsp;</td>
+</tr>
+<tr id="Ravi2011" class="entry">
+	<td>Ravi, K., Manivannan, S., Phanikumar, G., Murty, B. and Sundarraj, S.</td>
+	<td>Influence of Mg on Grain Refinement of Near Eutectic Al-Si Alloys</td>
+	<td>2011</td>
+	<td>Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science<br/>Vol. 42(7), pp. 2028-2039&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11661-010-0600-0">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Samal2015" class="entry">
+	<td>Samal, S. and Phanikumar, G.</td>
+	<td>Phase evolution in hypereutectic Al90Cu10-xNix (x=0,5) alloys</td>
+	<td>2015</td>
+	<td>Transactions of the Indian Institute of Metals&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s12666-015-0709-3">DOI</a> <a href="http://link.springer.com/article/10.1007/s12666-015-0709-3">URL</a>&nbsp;</td>
+</tr>
+<tr id="Samal2016" class="entry">
+	<td>Samal, S., Rahul, M.R., Kottada, R.S. and Phanikumar, G.</td>
+	<td>Hot deformation behaviour and processing map of Co-Cu-Fe-Ni-Ti eutectic high entropy alloy</td>
+	<td>2016</td>
+	<td>Materials Science and Engineering A&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.msea.2016.04.006">DOI</a> <a href="http://www.sciencedirect.com/science/article/pii/S0921509316303677">URL</a>&nbsp;</td>
+</tr>
+<tr id="Sandhya2014" class="entry">
+	<td>Sandhya, S., Mahemaa, R. and Phanikumar, G.</td>
+	<td>Microstructure Evolution During Fusion Welding of Rheocast AA7075 Alloy</td>
+	<td>2014</td>
+	<td>Procedia Materials Science<br/>Vol. 5, pp. 408-415&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.mspro.2014.07.283">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Sandhya2013" class="entry">
+	<td>Sandhya, S. and Phanikumar, G.</td>
+	<td>Investigation of fusion weldments of semi-solid aluminium A356 alloy: Pool geometry and microstructure</td>
+	<td>2013</td>
+	<td>Materials Science Forum<br/>Vol. 765, pp. 751-755&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-84883046296&partnerID=40&md5=159267cc80310be19508678998775baf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Sarkar2003155" class="entry">
+	<td>Sarkar, S., Raj, P., Chakraborty, S., Phanikumar, G., Chattopadhyay, K. and Dutta, P.</td>
+	<td>Transport phenomena in laser surface alloying</td>
+	<td>2003</td>
+	<td>Journal of Materials Science<br/>Vol. 38(1), pp. 155-164&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1023/A:1021134404356">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Singh2014" class="entry">
+	<td>Singh, S., Chattopadhyay, K., Phanikumar, G. and Dutta, P.</td>
+	<td>Experimental and numerical studies on friction welding of thixocast A356 aluminum alloy</td>
+	<td>2014</td>
+	<td>Acta Materialia<br/>Vol. 73, pp. 177-185&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1016/j.actamat.2014.04.019">DOI</a> &nbsp;</td>
+</tr>
+<tr id="SreenivasRao2008271" class="entry">
+	<td>Sreenivas Rao, K., Arun Kumar, S., Phanikumar, G. and Prasanna Kumar, T.</td>
+	<td>Effect of boundary heat flux transients on the solidification behavior and microstructure of AL-CU alloy</td>
+	<td>2008</td>
+	<td>TMS Annual Meeting, pp. 271-280&nbsp;</td>
+	<td>conference</td>
+	<td><a href="http://www.scopus.com/inward/record.url?eid=2-s2.0-52649180574&partnerID=40&md5=3ad99d37623c371af2ce21b29fc711c8">URL</a>&nbsp;</td>
+</tr>
+<tr id="Srinivas2011370" class="entry">
+	<td>Srinivas, M., Majumdar, B., Phanikumar, G. and Akhtar, D.</td>
+	<td>Effect of planar flow melt spinning parameters on ribbon formation in soft magnetic Fe68.5Si18.5B9Nb3Cu 1 alloy</td>
+	<td>2011</td>
+	<td>Metallurgical and Materials Transactions B: Process Metallurgy and Materials Processing Science<br/>Vol. 42(2), pp. 370-379&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1007/s11663-011-9476-7">DOI</a> &nbsp;</td>
+</tr>
+</tbody>
+</table>
+<footer>
+ <small>Created by <a href="http://jabref.sourceforge.net">JabRef</a> on 14/07/2016.</small>
+</footer>
+
+<!-- file generated by JabRef -->
+
+</body>
+</html>
