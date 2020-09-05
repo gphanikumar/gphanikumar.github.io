@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/gphani/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+  </head>
+  <body>
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>

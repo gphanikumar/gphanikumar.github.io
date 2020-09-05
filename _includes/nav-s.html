@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  {% for item in site.data.navigation %}
+    <a href="/gphani/{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a> | 
+  {% endfor %}
+</nav>
+<div class="banner">
+	&nbsp;<br/>
+	&nbsp;<br/>
+	&nbsp;<br/>
+	&nbsp;<br/>
+</div>

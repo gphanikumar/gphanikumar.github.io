@@ -1,0 +1,61 @@
+$font-stack: Helvetica, Arial, sans-serif;
+$primary-color: #333;
+$background-color: #eee;
+$evencolor: #a1cfa5;
+$oddcolor: #88b58c;
+$menubgcolor: #78947f;
+
+body{
+	font: 100% $font-stack;
+	color: $primary-color;
+	background-color: $background-color;
+}
+
+.container {
+  width: 95%;
+}
+
+.footer{
+	color: #ffffff;
+	padding: 10px;
+	background-color: #336600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	color: #006600;
+}
+
+h2 {
+	color: #009999;
+}
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+tr:nth-child(even) {
+	background: $evencolor;
+}
+tr:nth-child(odd) {
+	background: $oddcolor;
+}
+
+.navbar {
+	background: $menubgcolor;
+	font-size: 125%;
+	padding: 10px;
+}
+
+.banner {
+	background-image: url("/gphani/assets/images/dendbanner.png");
+	background-repeat: repeat-x;
+}

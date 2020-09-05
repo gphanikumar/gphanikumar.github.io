@@ -1,0 +1,41 @@
+---
+permalink: "/reslinks"
+title: "Links to homepages of researchers in solidification"
+layout: default
+----
+# Researchers in Solidification
+
+  * [[http://www.mech.kth.se/~gustava/|Gustav Amberg]]
+  * [[http://math.gmu.edu/~dmanders/|Daniel M. Anderson]]
+  * [[http://www.icaen.uiowa.edu/~becker/|Christoph Beckermann]]
+  * [[http://www.msm.cam.ac.uk/phase-trans/|H.K.D.H. Bhadeshia]]
+  * [[http://www.im2np.fr/perso/billia.html|Bernard Billia]]
+  * [[http://www.ctcms.nist.gov/~wjb/|William J. Boettinger]]
+  * [[http://www.pitt.edu/~caginalp/|Gunduz Caginalp]]
+  * [[http://www.ctcms.nist.gov/~cahn/|John W. Cahn]]
+  * [[http://www.ems.psu.edu/~chen/|Long-Qing Chen]]
+  * [[http://www.materials.leeds.ac.uk/StaffProfiles.htm|R.F. Cochrane]]
+  * [[http://fisica.unicam.it/docenti/conti/|Massimo Conti]]
+  * [[http://quattro.me.uiuc.edu/~jon|Jonathan A. Dantzig]]
+  * [[http://personalwebs.oakland.edu/~elder/|Ken Elder]]
+  * [[http://www.lnsm.eu/galenko|Peter Galenko]]
+  * [[http://guava.physics.uiuc.edu/~nigel/|Nigel Goldenfeld]]
+  * [[http://www.szfki.hu/~grana/|László Gránásy]]
+  * [[http://www.physics.mcgill.ca/~grant/|Martin Grant]]
+  * [[http://www.dieter-herlach.de/ |Dieter M. Herlach]]
+  * [[http://www.circs.neu.edu/members/alain.htm|Alain Karma]]
+  * [[http://materials.physics.wustl.edu/|Kenneth F. Kelton]]
+  * [[http://math.nist.gov/~GMcFadden/|Geoffrey G. McFadden]]
+  * [[http://www.iaf.hs-karlsruhe.de/ice/ice/nestler/|Britta Nestler]]
+  * [[http://www.ma.hw.ac.uk/~oliver/|Oliver Penrose]]
+  * [[http://pmc.polytechnique.fr/mp/Welcome_eng.html|Mathis Plapp]]
+  * [[http://mse.mcmaster.ca/faculty/provatas/|Nikolas Provatas]]
+  * [[http://lsmx.epfl.ch/|Michel Rappaz]]
+  * [[http://www.dlr.de/mp|Lorenz Ratke]]
+  * [[http://physics.ucsd.edu/~rappel/|Wouter-Jan Rappel]]
+  * [[http://www.phys.cmu.edu/people/faculty/sekerka/|Robert F. Sekerka]]
+  * [[http://www.seas.harvard.edu/matsci/people/fspaepen/index.html|Frans Spaepen]]
+  * [[http://www.metcer.ameslab.gov/people/trivedi.html|Rohit K. Trivedi]]
+  * [[http://www.ce.umn.edu/~voller/|Vaughan R. Voller]]
+  * [[http://www.matsci.northwestern.edu/faculty/pwv.html|Peter W. Voorhees]]
+  * [[http://www.ctcms.nist.gov/~jwarren/|James A. Warren]]
