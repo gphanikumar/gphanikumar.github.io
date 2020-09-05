@@ -1,0 +1,119 @@
+- name: Prabhakar Choudhury
+  roll: MM05M008
+  year: 2007
+  title: Effect of welding parameter on microstructure and mechanical property of Al-Zn-Mg alloy weldment and in-situ temperature measurement
+  url: "students/prabhakar"
+  remarks:
+# ----------------------------------------------------------
+- name: David Vijayanand
+  roll: MM05M003
+  year: 2007
+  title: Friction welding of aluminium alloys
+  url: "students/david"
+  remarks:
+# ----------------------------------------------------------
+- name: Meduri Srinivas
+  roll: MM06M007
+  year: 2008
+  title: Processing and characterization of nanocrystalline Fe-Si-B-Nb-Cu alloys for ultrasoft magnetic applications
+  url: "students/msrinivas"
+  remarks: Sponsored student from DMRL, Hyderabad externally guided by Dr. Bhaskar Majumdar
+# ----------------------------------------------------------
+- name: P. Muthu Pandi
+  roll: MM07M010
+  year: 2009
+  title: Joining of alumina with austenitic stainless steel by active brazing
+  url: "students/muthupandi"
+  remarks:
+# ----------------------------------------------------------
+- name: N. Sri Vishnu Rao
+  roll: MM08M015
+  year: 2010
+  title: Microstructure evolution of heat treated semi-solid Al-Si based alloys
+  url: "students/nssrao"
+  remarks:
+# ----------------------------------------------------------
+- name: Sudhir Pawaskar
+  roll: MM09M021
+  year: 2011
+  title: Studies on inert gas furnace brazing of metastable beta Ti (15-3-3-3) to 316Ti SS
+  url: "students/pawaskar"
+  remarks:
+# ----------------------------------------------------------
+- name: V. Santhanagopalan
+  roll: MM10M017
+  year: 2012
+  title: Joining of semi-solid processed aluminium alloy A356
+  url: "students/santhanagopalan"
+  remarks:
+# ----------------------------------------------------------
+- name: Annabattula V.V. Santosh Kumar
+  roll: CE10M195
+  year: 2012
+  title: Welding distortion analysis of high manganese steel
+  url: "students/santhosh"
+  remarks: Under user-oriented program for L&T
+# ----------------------------------------------------------
+- name: V.S. Sankar
+  roll: (Anna University)
+  year: 2012
+  title: Thermal analysis of friction stir spot welding process using finite element method
+  url: "students/vssankar"
+  remarks: Jointly with Dr. Latha Nagendran, Anna University
+# ----------------------------------------------------------
+- name: J. Dhananjeyan
+  roll: CE11M170
+  year: 2013
+  title: Thermal modeling of A-TIG welding and experimental validation
+  url: "students/dhan"
+  remarks: Under user-oriented program for L&T
+# ----------------------------------------------------------
+- name: K. Venkata Muralidhar
+  roll: MM12M026
+  year: 2014
+  title: Simulation of vacuum arc remelting process using SYSWELD
+  url: "students/venkat"
+  remarks:
+# ----------------------------------------------------------
+- name: Mohammed Ashik V
+  roll: MM13M015
+  year: 2015
+  title: Repair welding of Ni-based superalloys
+  url: "students/ashik"
+  remarks: Jointly with Dr. Dheepa Srinivasan, GE, Bangalore
+# ----------------------------------------------------------
+- name: Durgesh Kumar
+  roll: MM15M009
+  year: 2017
+  title: Thermodynamics and kinetics calculation for multicomponent alloy design and development towards an ICME approach
+  url: "students/durgesh"
+  remarks:
+# ----------------------------------------------------------
+- name: Aravind Babu
+  roll: MM15M020
+  year: 2017
+  title: Finite element simulation of heat treatment and residual stress analysis of multiphase steels towards ICME approach
+  url: "students/aravindbabu"
+  remarks:
+# ----------------------------------------------------------
+- name: Vemireddy Gayatri
+  roll: MM16M008
+  year: 2018
+  title: ICME approach to predict cracking behavior in additive manufacturing
+  url: "students/gayatri"
+  remarks:
+# ----------------------------------------------------------
+- name: Shah Naishalkumar Sanjay
+  roll: MM17M017
+  year: 2019
+  title: Design and development of eutectic high entropy alloy - an experimental and simulation approach
+  url: "students/naishal"
+  remarks:
+# ----------------------------------------------------------
+- name: D. Dinesh
+  roll: MM17M
+  year: 2019
+  title: 
+  url: "students/dinesh"
+  remarks: Sponsored student from TCS
+# ----------------------------------------------------------

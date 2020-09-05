@@ -1,0 +1,78 @@
+- name: Amresh Kumar Gupta
+  roll: MT01B030
+  year: 2006
+  title: Microstructural evolution during remelting of LSA hypermonotectic Al+10wt%Bi + 10wt% Cu alloy
+  url: "students/amresh"
+# ----------------------------------------------------------
+- name: Abhik N. Choudhury
+  roll: MT03B035
+  year: 2008
+  title: Phase field modeling of eutectic solidification
+  url: "students/abhik"
+# ----------------------------------------------------------
+- name: Ramesh Gokul
+  roll: MM04B038
+  year: 2009
+  title: Friction stir welding of dissimilar aluminium alloys
+  url: "students/rameshgokul"
+# ----------------------------------------------------------
+- name: Mathew Joseph
+  roll: MM05B031
+  year: 2010
+  title: Solidification of undercooled Heusler alloys
+  url: "students/mathew"
+# ----------------------------------------------------------
+- name: Ahmad Omar
+  roll: MM06B032
+  year: 2011
+  title: Studies on non-equilibrium solidified Co-Fe-Sn system
+  url: "students/ahmadomar"
+# ----------------------------------------------------------
+- name: Sanket Navale
+  roll: MM07B030
+  year: 2012
+  title: Phase field simulation of snow metamorphism
+  url: "students/sanket"
+# ----------------------------------------------------------
+- name: Suryanaman Chaube
+  roll: MM08B024
+  year: 2013
+  title: Theoretical studies on modelling microstructural evolution using diffuse interface methods
+  url: "students/suryanaman"
+# ----------------------------------------------------------
+- name: Allu Naga Lakshmi Siva Sai
+  roll: MM09B002
+  year: 2014
+  title: Phase field simulation of polycrystalline solidification
+  url: "students/allu"
+# ----------------------------------------------------------
+- name: Manish Kumar Gupta
+  roll: MM10B024
+  year: 2015
+  title: Phase-field simulation of additive manufacturing
+  url: "students/manish"
+# ----------------------------------------------------------
+- name: Ramani Agharkar
+  roll: MM11B036
+  year: 2016
+  title: Computational Studies in Manufacturing
+  url: "students/ramani"
+# ----------------------------------------------------------
+- name: Abhishek Shandilya
+  roll: MM12B037
+  year: 2017
+  title: Phase field modelling of mushy zone flow using lattice Boltzmann method
+  url: "students/abhishek"
+# ----------------------------------------------------------
+- name: Gautham Muthusamy
+  roll: MM13B040
+  year: 2018
+  title: Phase field model of microstucture evolution 
+  url: "students/gautham"
+# ----------------------------------------------------------
+- name: Vishal Subramanian
+  roll: MM14B048
+  year: 2019
+  title: Multiscale modelling of additive manufacturing
+  url: "students/vishalsubramanian"
+# ----------------------------------------------------------

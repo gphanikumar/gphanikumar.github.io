@@ -1,0 +1,413 @@
+- sem: July-Nov
+  year: 2020
+  num: MM2015
+  name: Thermodynamics of Materials
+  students: 56
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2020
+  num: MM3014
+  name: Undergraduate Research in Materials - 1
+  students: 12
+  remarks: Coordination
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2020
+  num: MM4030
+  name: Undergraduate Research in Materials - 2
+  students: 1
+  remarks: Coordination
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2020
+  num: MM5480
+  name: Advanced Phase Transformations
+  students: 30
+  remarks: MTech Core, alone
+# ----------------------------------------------------
+- sem: July-Nov
+  year: 2019
+  num: MM2090
+  name: Introduction to Scientific Computing
+  students: 82
+  remarks: UG Elective, alone
+# ----------------------------------------------------
+- sem: July-Nov
+  year: 2019
+  num: MM2015
+  name: Thermodynamics of Materials
+  students: 46
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2019
+  num: MM2090
+  name: Introduction to Scientific Computing
+  students: 20
+  remarks: UG Elective, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2019
+  num: MM3014
+  name: Undergraduate Research in Materials - 1
+  students: 6
+  remarks: Coordination
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2019
+  num: MM5290
+  name: Stability of Microstructures
+  students: 9
+  remarks: PG Elective, alone
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2018
+  num: MM2015
+  name: Thermodynamics of Materials
+  students: 51
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2018
+  num: MM3110
+  name: Computational Materials Engineering Lab
+  students: 35
+  remarks: UG Elective, DD Core, shared
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2018
+  num: MM4030
+  name: Undergraduate Research in Materials - 2
+  students: 2
+  remarks: Coordination
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2018
+  num: MM5520
+  name: Solidification Phenomena
+  students: 7
+  remarks: PG Elective, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2018
+  num: MM2041
+  name: Transport Phenomena in Materials
+  students: 41
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2018
+  num: MM3014
+  name: Undergraduate Research in Materials - 1
+  students: 6
+  remarks: Coordination
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2018
+  num: MM5290
+  name: Stability of Microstructures
+  students: 8
+  remarks: PG Elective, alone
+# ----------------------------------------------------
+- sem: July-Nov
+  year: 2017
+  num: MM2010
+  name: Principles of Physical Metallurgy
+  students: 44
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: July-Nov
+  year: 2017
+  num: MM3110
+  name: Computational Materials Engineering Lab
+  students: 31
+  remarks: UG Elective, DD Core, shared
+# ----------------------------------------------------
+- sem: July-Nov
+  year: 2017
+  num: MM5520
+  name: Solidification Phenomena
+  students: 7
+  remarks: PG Elective, shared
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2017
+  num: MM2041
+  name: Transport Phenomena in Materials
+  students: 43
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2017
+  num: MM5760
+  name: Advanced Topics in Metal Joining
+  students: 4
+  remarks: PG Elective, shared
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2016
+  num: MM2010
+  name: Principles of Physical Metallurgy
+  students: 46
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2016
+  num: MM2040
+  name: Introduction to Transport Phenomena
+  students: 47
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2016
+  num: MM5760
+  name: Advanced Topics in Metal Joining
+  students: 22
+  remarks: PG Elective, shared
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2015
+  num: MM2010
+  name: Principles of Physical Metallurgy
+  students: 49
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2015
+  num: MM2011
+  name: Optical Micrography Lab
+  students: 
+  remarks: UG Core Lab, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2015
+  num: MM2040
+  name: Introduction to Transport Phenomena
+  students: 48
+  remarks: UG Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2015
+  num: MM5770
+  name: Welding Laboratory - 1
+  students: 
+  remarks: PG Elective Lab, shared
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2014
+  num: MM2030
+  name: Metallurgical Thermodynamics
+  remarks: UG Core
+  students: 51
+# -------------------------------------------
+- sem: Jan-May
+  year: 2014
+  num: MM538
+  name: Transport Phenomena in Metallurgical Processes
+  remarks: PG Elec
+  students: 6
+# -------------------------------------------
+- sem: Jan-May
+  year: 2014
+  num: MM307
+  name: Solidification Processing
+  remarks: UG Core
+  students: 41
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2013
+  num: MM2030
+  name: Metallurgical Thermodynamics
+  remarks: UG Core
+  students: 47
+# -------------------------------------------
+- sem: Jan-May
+  year: 2013
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2013
+  num: MM307
+  name: Solidification Processing
+  remarks: UG Core
+  students: 
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2012
+  num: MM2030
+  name: Metallurgical Thermodynamics
+  remarks: UG Core
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2012
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2012
+  num: MM204
+  name: Introduction to Transport Phenomena
+  remarks: UG Core
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2011
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 12
+# -------------------------------------------
+- sem: Jan-May
+  year: 2011
+  num: MM204
+  name: Introduction to Transport Phenomena
+  remarks: UG Core
+  students: 38
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2010
+  num: MT334
+  name: Materials Processing Techniques
+  remarks: Minor
+  students: 
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2010
+  num: MM307
+  name: Solidification Processing
+  remarks: UG Core
+  students: 30
+# -------------------------------------------
+- sem: Jan-May
+  year: 2010
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 11
+# -------------------------------------------
+- sem: Jan-May
+  year: 2010
+  num: MM204
+  name: Introduction to Transport Phenomena
+  remarks: UG Core
+  students: 42
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2009
+  num: MM303
+  name: Materials Characterization
+  remarks: UG Core
+  students: 32
+# -------------------------------------------
+- sem: Jan-May
+  year: 2009
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2009
+  num: MM204
+  name: Introduction to Transport Phenomena
+  remarks: UG Core
+  students: 34
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2008
+  num: MM307
+  name: Solidification Processing
+  remarks: UG Core
+  students: 40
+# -------------------------------------------
+- sem: Jan-May
+  year: 2008
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2008
+  num: MM204
+  name: Introduction to Transport Phenomena
+  remarks: UG Core
+  students: 44
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2007
+  num: MM307
+  name: Solidification Processing
+  remarks: UG Core
+  students: 33
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2007
+  num: MM303
+  name: Materials Characterization
+  remarks: UG Core
+  students: 30
+# -------------------------------------------
+- sem: Jan-May
+  year: 2007
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2007
+  num: MM204
+  name: Introduction to Transport Phenomena
+  remarks: UG Core
+  students: 35
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2006
+  num: MT538
+  name: Transport Phenomena in Metallurgical Processes
+  remarks: PG Elec
+  students: 42
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2006
+  num: MM303
+  name: Materials Characterization
+  remarks: UG Core
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2006
+  num: MT576
+  name: Advanced Topics in Welding
+  remarks: PG Elec
+  students: 
+# -------------------------------------------
+- sem: Jan-May
+  year: 2006
+  num: MM204
+  name: Introduction to Transport Phenomena
+  remarks: UG Core
+  students: 40
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2005
+  num: MT334
+  name: Materials Processing Techniques
+  remarks: Minor
+  students: 21
+# -------------------------------------------
+- sem: Jul-Nov
+  year: 2005
+  num: MT538
+  name: Transport Phenomena in Metallurgical Processes
+  remarks: PG Elec
+  students: 9
+# -------------------------------------------

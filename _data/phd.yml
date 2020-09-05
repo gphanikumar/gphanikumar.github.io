@@ -1,0 +1,70 @@
+- name: N. Sreedhar
+  roll: MT04D007
+  year: 2007 
+  title: Studies on improvement of corrosion and wear resistance or aluminium alloys by micro arc oxidation 
+  url: "students/sreedhar"
+  remarks: External registrant from DRDO, jointly with Prof. K. Prasad Rao
+# ----------------------------------------------------------
+- name: K.V. Sreenivas Rao
+  roll: MM05D014
+  year:  2009
+  title: Spartial and temporal variation of metal-mold interface heat flux during gravity die casting 
+  url: "students/kvsrao"
+  remarks: QIP student, jointly guided by Prof. T. S. Prasanna Kumar
+# ----------------------------------------------------------
+- name: Biju S. Nair
+  roll: MM05D012
+  year: 2009 
+  title: Studies on gas tungsten arc and electron beam welded Al-6wt% Cu (AA2219) alloy 
+  url: "students/biju"
+  remarks: External registrant from ISRO, jointly guided by Prof. K. Prasad Rao
+# ----------------------------------------------------------
+- name: K. Balachandar
+  roll: MM05D007
+  year: 2010
+  title: Studies on GTW and EB welded metastable beta-titanium (Ti-15-3) alloy
+  url: "students/balachandar"
+  remarks: (sole guidance)
+# ----------------------------------------------------------
+- name: R.V.S. Prasad
+  roll: MM06D001
+  year: 2011 
+  title: Microstructure and properties of non-equilibrium solidified Ni2MnGa and similar / doped alloys
+  url: "students/rvsprasad"
+  remarks: (sole guidance)
+# ----------------------------------------------------------
+- name: H. Khalid Rafi
+  roll: MM08D002
+  year: 2012 
+  title: Friction processing of dissimilar materials 
+  url: "students/khalidrafi"
+  remarks: Jointly guided by Prof. K. Prasad Rao
+# ----------------------------------------------------------
+- name: P. Gerald Tennyson
+  roll: MM06D012
+  year: 2014
+  title: Microstructure simulation using Phase field and coupling thermodynamic data using CALPHAD approach
+  url: "students/gerald"
+  remarks: Jointly guided by Prof. K.C. Hari Kumar
+# ----------------------------------------------------------
+- name: R. Kala Shirish
+  roll: ME09D021
+  year: 2014 
+  title: Distortion control during welding using a trailing cryogenic heat sink
+  url: "students/shirish"
+  remarks: Jointly guided by Prof. N. Siva Prasad (retired from ME, IITM)
+# ----------------------------------------------------------
+- name: Hrusikesh Nath
+  roll: MM10D005
+  year: 2015 
+  title: Solidification of Heusler alloys
+  url: "students/hrusikesh"
+  remarks: (sole guidance)
+# ----------------------------------------------------------
+- name: M. R. Rahul
+  roll: MM15D012
+  year: 2020
+  title: Undercooling studies and characterisation of equiatomic FecoNiCu alloy and its derivatives by integrating experimental and simulation methods 
+  url: "students/rahulmr"
+  remarks: (sole guidance)
+# ----------------------------------------------------------

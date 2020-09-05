@@ -1,0 +1,36 @@
+- name: Home
+  link: /gphani/new
+- name: Curriculum Vitae
+  link: /gphani/new/cv.html
+- name: Research
+  link: /gphani/new/research.html
+- name: Publications
+  link: /gphani/new/publications.html
+- name: Editorials
+  link: /gphani/new/eds.html
+- name: Invited Lectures
+  link: /gphani/new/il.html
+- name: Teaching
+  link: /gphani/new/teaching.html
+- name: Continuing Education
+  link: /gphani/new/ce.html
+- name: Online Videos
+  link: /gphani/new/nptel.html
+- name: Students
+  link: /gphani/new/students.html
+- name: Ex-students
+  link: /gphani/new/exstudents.html
+- name: Links
+  link: /gphani/new/tlinks.html
+- name: Notes
+  link: /gphani/new/notes.html
+- name: Events
+  link: /gphani/new/events.html
+- name: Professional Affiliation
+  link: /gphani/new/profsoc.html
+- name: Responsibilities
+  link: /gphani/new/cr.html
+- name: Project Internships
+  link: /gphani/new/projectinternships.html
+- name: Advise to Internship Bulkmailers
+  link: /gphani/new/internships.html

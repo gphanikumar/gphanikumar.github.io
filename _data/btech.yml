@@ -1,0 +1,133 @@
+# ----------------------------------------------------------
+- name: Srikanth Sundararajan
+  roll: MT03B029
+  year: 2007
+  title: Phase-field computation for faceted growth for anisotropy of kinetic coefficient
+  url: "students/srikanth"
+# ----------------------------------------------------------
+- name: Anita Tammineni
+  roll: MM04B003
+  year: 2008
+  title: Friction welding of copper and stainless steel 304
+  url: "students/anita"
+# ----------------------------------------------------------
+- name: Apoorva
+  roll: MM04B006
+  year: 2008
+  title: Non-equilibrium solidification of Ni50Mn37Sn13 alloy
+  url: "students/apoorva"
+# ----------------------------------------------------------
+- name: Sunil Kumar
+  roll: MM05B023
+  year: 2009
+  title: Non-equilibrium solidification of Ni50Mn37Sn13 alloy
+  url: "students/sunil"
+# ----------------------------------------------------------
+- name: B.G. Chirranjeevi
+  roll: MM05B003
+  year: 2009
+  title: Phase field modeling of anisotropic solidification microstructures 
+  url: "students/chirranjeevi"
+# ----------------------------------------------------------
+- name: Aravind Krishnamurty
+  roll: MM06B004
+  year: 2010
+  title: Phase field simulation of microstructure evolution
+  url: "students/aravind"
+# ----------------------------------------------------------
+- name: Priyank V. Kumar
+  roll: MM06B015
+  year: 2010
+  title: Modeling electron beam welding process
+  url: "students/priyank"
+# ----------------------------------------------------------
+- name: A. Ravi Kant
+  roll: MM06B020
+  year: 2010
+  title: Friction processing of Magnesium and Aluminium alloys
+  url: "students/ravikant"
+# ----------------------------------------------------------
+- name: Reshma Saira Mathew
+  roll: MM07B016
+  year: 2011
+  title: Studies on Non-equilibrium solidified Ni-Si eutectic alloy
+  url: "students/reshma"
+# ----------------------------------------------------------
+- name: R. Sivaraman
+  roll: MM07B018
+  year: 2011
+  title: Phase field simulation of microstructure evolution
+  url: "students/sivaraman"
+# ----------------------------------------------------------
+- name: Gunda Naga Sri Harsha
+  roll: MM08B009
+  year: 2012
+  title: Studies on Non-equilibrium solidified Ni-Si eutectic alloy
+  url: "students/harsha"
+# ----------------------------------------------------------
+- name: Arun B.
+  roll: MM10B007
+  year: 2014
+  title: Phase field simulation of microstructure evolution
+  url: "students/arunb"
+# ----------------------------------------------------------
+- name: Harish Donthula
+  roll: MM10B017
+  year: 2014
+  title: Vacuum brazing of high temperature alloys to composites
+  url: "students/harish"
+# ----------------------------------------------------------
+- name: Varanasi Akshay Kumar
+  roll: MM13B034
+  year: 2017
+  title: Simulation of vacuum arc remelting using OpenFOAM
+  url: "students/akshay"
+# ----------------------------------------------------------
+- name: Kuzhikkat Aiswarya Menon
+  roll: MM13B021
+  year: 2017
+  title: Simulation of microstructural evolution using MICRESS
+  url: "students/aiswarya"
+# ----------------------------------------------------------
+- name: Shivram Kashyap
+  roll: MM08B019
+  year: 2012
+  title: Phase field modelling of dendritic solidification in 2D and 3D
+  url: "students/shivram"
+# ----------------------------------------------------------
+- name: Vishal Subbiah
+  roll: MM12B035
+  year: 2016
+  title: Phase-field modelling of three-phase electrode microstructures in solid oxide fuel cells
+  url: "students/vishalsubbiah"
+# ----------------------------------------------------------
+- name: Aslamah Rahman
+  roll: MM14B007
+  year: 2018
+  title: Simulation Of Flow Interaction With Morphological Evolution - An Electrospraying Aspect
+  url: "students/aslamah"
+# ----------------------------------------------------------
+- name: Akash Ramdas
+  roll: MM15B020
+  year: 2019
+  title: Modelling solidification at different length scales to use in additive manufacturing models
+  url: "students/akashramdas"
+# ----------------------------------------------------------
+- name: R. Balavignesh
+  roll: MM15B021
+  year: 2019
+  title: Modelling of vacuum arc remelting using openfoam
+  url: "students/balavignesh"
+# ----------------------------------------------------------
+- name: Anirrudh Ramesh
+  roll: MM16B014
+  year: 2020
+  title: Predicting process parameter correlations using machine learning and its multi-objective optimization in additively manufactured components
+  url: "students/anirrudh"
+# ----------------------------------------------------------
+- name: Madhurima Mahajan
+  roll: MM16B030
+  year: 2020
+  title: Alloy development through artificial intelligence (ADAI) - development of tool steel
+  url: "students/madhurima"
+# ----------------------------------------------------------

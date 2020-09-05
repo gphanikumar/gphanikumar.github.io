@@ -1,0 +1,175 @@
+- name: M. Agilan
+  roll: MM15D201
+  url: "students/agilan"
+  prog: MS + PhD (ext)
+  title: 
+  remarks: External registrant from ISRO, external guide is Dr. D. Sivakumar, VSSC
+#-------------------------------------------------------------
+- name: Deepu Mathew John
+  roll: MM14D207
+  url: "students/deepu"
+  prog: MS + PhD
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: R. Ramakrishnan
+  roll: MM13D013
+  url: "students/ramakrishnan"
+  prog: PhD (ext)
+  title: 
+  remarks: External registrant from DRDO, external guide is Dr. R. Sankarasubramanian, DMRL
+#-------------------------------------------------------------
+- name: M. Sankar
+  roll: MM13D015
+  url: "students/sankar"
+  prog: PhD (ext)
+  title: 
+  remarks: External registrant from DRDO, external guide is Dr. V.V. Satya Prasad, DMRL
+#-------------------------------------------------------------
+- name: B. Nithin
+  roll: MM15D005
+  url: "students/nithin"
+  prog: PhD
+  title: 
+  remarks: co-guided by Dr. M. Sundararaman
+#-------------------------------------------------------------
+- name: K. Rangan
+  roll: MM15D300
+  url: "students/rangan"
+  prog: PhD under ID program
+  title: 
+  remarks: technical staff of IITM, co-guided by Prof. G.L. Samuel, Dept of ME
+#-------------------------------------------------------------
+- name: Dasari Mohan
+  roll: MM12D017
+  url: "students/mohan"
+  prog: PhD
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: K. Lakshminarayanan
+  roll: ME11D006
+  url: "students/klnaren"
+  prog: PhD
+  title: 
+  remarks: co-guided by Prof. N. Siva Prasad, retired from Dept of ME
+#-------------------------------------------------------------
+- name: Uday Pratap Singh
+  roll: MM18D032
+  url: "students/udaypratap"
+  prog: PhD
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: Kotha Satya Tejaswi
+  roll: MM18D028
+  url: "students/tejaswi"
+  prog: PhD
+  title: 
+  remarks: Under CoExiSt project
+#-------------------------------------------------------------
+- name: Sivaji Karna
+  roll: MM18S011
+  url: "students/sivaji"
+  prog: MS
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: N.N. Anoop
+  roll: MM19S011
+  url: "students/anoop"
+  prog: MS
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: V.S. Hariharan
+  roll: MM18D401
+  url: "students/hariharan"
+  prog: MS + PhD
+  title: 
+  remarks: co-guided by Prof. B.S. Murty 
+#-------------------------------------------------------------
+- name: M. Tarun Babu
+  roll: MM18D017
+  url: "students/tarunbabu"
+  prog: PhD (ext)
+  title: Structure property studies on cold sprayed aluminium alloy coatings
+  remarks: External registrant from ARCI, external guide is Dr. K. Suresh, ARCI
+#-------------------------------------------------------------
+- name: Addepalli Veera Sreenu
+  roll: MM18D024
+  url: "students/veerasreenu"
+  prog: PhD (ext)
+  title: 
+  remarks: External registrant from RGUKT, guided by Prof. B.S. Murty
+#-------------------------------------------------------------
+- name: Umair Hussain
+  roll: ME19D400
+  url: "students/umair"
+  prog: PhD
+  title: 
+  remarks: Guided by Dr. Narasimhan Swaminathan, Dept of ME
+#-------------------------------------------------------------
+- name: S.P. Senthil
+  roll: ME17M523
+  url: "students/spsenthil"
+  prog: Industrial M.Tech
+  title: 
+  remarks: Industrial MTech project at Sundaram-Clayton, external guide is Dr. T.V.L.N. Rao
+#-------------------------------------------------------------
+- name: K. Arunkumar
+  roll: ME18S072
+  url: "students/arunkumar"
+  prog: MS (ext)
+  title: 
+  remarks: External regisrant from Sundaram-Clayton, guided by Prof. Shamit Bakshi, external guide is Dr. T.V.L.N. Rao 
+#-------------------------------------------------------------
+- name: H. Vishal
+  roll: MM16B023
+  url: "students/hvishal"
+  prog: B.Tech in MME + M.Tech in Data Sciences
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: Satyamshreshta Khushwaha
+  roll: MM16B108
+  url: "students/satyam"
+  prog: B.Tech + M.Tech
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: Arsh Bawa
+  roll: MM17B001
+  url: "students/arshbawa"
+  prog: B.Tech
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: Tapish Devendra Garg
+  roll: MM17B034
+  url: "students/tapish"
+  prog: B.Tech
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: Varun Srinivas 
+  roll: MM17B036
+  url: "students/varunsrinivas"
+  prog: B.Tech
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: Nikhil Mula
+  roll: MM17M018
+  url: "students/nikhilmula"
+  prog: M.Tech
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: N. Pavithra
+  roll: MM19M021
+  url: "students/pavithra"
+  prog: M.Tech
+  title: 
+  remarks: 
+#-------------------------------------------------------------

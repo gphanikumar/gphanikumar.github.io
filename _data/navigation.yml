@@ -1,0 +1,34 @@
+- name: Home
+  link: /gphani
+- name: Curriculum Vitae
+  link: cv.html
+- name: Research
+  link: research.html
+- name: Publications
+  link: publications.html
+- name: Editorials
+  link: eds.html
+- name: Invited Lectures
+  link: il.html
+- name: Teaching
+  link: teaching.html
+- name: Continuing Education
+  link: ce.html
+- name: Online Videos
+  link: nptel.html
+- name: Students
+  link: students.html
+- name: Ex-students
+  link: exstudents.html
+- name: Links
+  link: tlinks.html
+- name: Notes
+  link: notes.html
+- name: Events
+  link: events.html
+- name: Professional Affiliation
+  link: profsoc.html
+- name: Responsibilities
+  link: cr.html
+- name: Project Internships
+  link: projectinternships.html
