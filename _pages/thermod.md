@@ -13,7 +13,7 @@ title: Links to Online resources on Thermodynamics of Materials
  * [sagemath](http://www.sagemath.org/) a free open-source software for numerical and symbolic mathematics, ready with Jupyter notebook and wrappers for all kinds of tools.
  * [DoITPoMS](http://www.doitpoms.ac.uk/) website has a section on [Ellingham Diagrams](http://www.doitpoms.ac.uk/tlplib/ellingham_diagrams/index.php).
  * The College of Engineering, San Jose State University has a tutorial page on [Ellingam Diagrams](http://www.engr.sjsu.edu/ellingham/tutorial.html). Play with the [webtool](http://www.engr.sjsu.edu/ellingham/ellingham_tool_p1.php) out there and see.
- * [Equilibrium of Things](https://blog.gtt-technologies.de/) blog
+ * [Equilibrium of Things](https://gtt-technologies.de/blog/) blog
 
 ## Standards
  * [CALPHAD](http://www.calphad.org/) - the defacto standard for computational thermodynamics
