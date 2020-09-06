@@ -7,6 +7,7 @@ layout: default
 # Subject-wise Links
 Here are some links categorized by the subjects that I teach.
 
+  * [Thermodynamics of Materials](thermod.html)
   * [Transport Phenomena](tplinks.html)
   * [Optical Microscopy](omlinks.html)
   * [Transmission Electron Microscopy](temlinks.html)
