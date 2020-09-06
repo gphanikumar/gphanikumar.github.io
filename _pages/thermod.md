@@ -5,6 +5,9 @@ title: Links to Online resources on Thermodynamics of Materials
 ---
 # Links to Online resources on Thermodynamics of Materials
 
+## Books
+  * [Thermodynamics of Materials](https://www.worldcat.org/profiles/gphanikumar/lists/3985955) - list of books on [WorldCat](https://worldcat.org) - have a look.
+
 ## Educational resources
  * [slogwiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) An open-edit encyclopedia dedicated to thermodynamics and statistical mechanics. 
  * [sagemath](http://www.sagemath.org/) a free open-source software for numerical and symbolic mathematics, ready with Jupyter notebook and wrappers for all kinds of tools.
