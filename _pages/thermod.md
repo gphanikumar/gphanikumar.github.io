@@ -6,7 +6,8 @@ title: Links to Online resources on Thermodynamics of Materials
 # Links to Online resources on Thermodynamics of Materials
 
 ## Books
-  * [Thermodynamics of Materials](https://www.worldcat.org/profiles/gphanikumar/lists/3985955) - list of books on [WorldCat](https://worldcat.org) - have a look.
+  * [Textbooks on Thermodynamics of Materials](https://www.worldcat.org/profiles/gphanikumar/lists/3985955) - list of books on [WorldCat](https://worldcat.org) - have a look.
+  * [Reference books on Thermodynamics of Materials](https://www.worldcat.org/profiles/gphanikumar/lists/3986512) - list of books on [WorldCat](https://worldcat.org).
 
 ## Educational resources
  * [slogwiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) An open-edit encyclopedia dedicated to thermodynamics and statistical mechanics. 
