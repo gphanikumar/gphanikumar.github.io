@@ -9,34 +9,34 @@
   roll: MM14D207
   url: "students/deepu"
   prog: MS + PhD
-  title: 
+  title: ICME based simulation of microstructure and property evolution in DP steels
   remarks: 
 #-------------------------------------------------------------
 - name: R. Ramakrishnan
   roll: MM13D013
   url: "students/ramakrishnan"
   prog: PhD (ext)
-  title: 
+  title: Multiscale modeling and simulation of microstructural evolution during solidification
   remarks: External registrant from DRDO, external guide is Dr. R. Sankarasubramanian, DMRL
 #-------------------------------------------------------------
 - name: M. Sankar
   roll: MM13D015
   url: "students/sankar"
   prog: PhD (ext)
-  title: 
+  title: Microstructure evolution and mechanical properties of Nb-Si-Hf and Nb-Si-Zr based high temperature alloys
   remarks: External registrant from DRDO, external guide is Dr. V.V. Satya Prasad, DMRL
 #-------------------------------------------------------------
 - name: B. Nithin
   roll: MM15D005
   url: "students/nithin"
   prog: PhD
-  title: 
+  title: Thermo-mechanical processing and precipitation behavior of gamma/gamma-prime strengthened cobalt-base superalloys
   remarks: co-guided by Dr. M. Sundararaman
 #-------------------------------------------------------------
 - name: K. Rangan
   roll: MM15D300
   url: "students/rangan"
-  prog: PhD under ID program
+  prog: PhD under ID research program
   title: 
   remarks: technical staff of IITM, co-guided by Prof. G.L. Samuel, Dept of ME
 #-------------------------------------------------------------
@@ -44,7 +44,7 @@
   roll: MM12D017
   url: "students/mohan"
   prog: PhD
-  title: 
+  title: Phase field simulation of solidification of multi-component alloys
   remarks: 
 #-------------------------------------------------------------
 - name: K. Lakshminarayanan
@@ -65,14 +65,14 @@
   roll: MM18D028
   url: "students/tejaswi"
   prog: PhD
-  title: 
+  title: OpenFOAM modeling of continuous casting steel
   remarks: Under CoExiSt project
 #-------------------------------------------------------------
 - name: Sivaji Karna
   roll: MM18S011
   url: "students/sivaji"
   prog: MS
-  title: 
+  title: Weldability of Haynes 282 alloy
   remarks: 
 #-------------------------------------------------------------
 - name: N.N. Anoop
