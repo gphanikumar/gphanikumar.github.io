@@ -128,48 +128,48 @@
   roll: MM16B023
   url: "students/hvishal"
   prog: B.Tech in MME + M.Tech in Data Sciences
-  title: 
-  remarks: 
+  title: Physics based ML framework for simulating microstructure evolution
+  remarks: Co-guided by Dr. Balaraman Ravindran, RBCDSAI
 #-------------------------------------------------------------
 - name: Satyamshreshta Khushwaha
   roll: MM16B108
   url: "students/satyam"
   prog: B.Tech + M.Tech
-  title: 
+  title: OpenFOAM solvers to simulate microstructure evolution using phase field method
   remarks: 
 #-------------------------------------------------------------
 - name: Arsh Bawa
   roll: MM17B001
   url: "students/arshbawa"
   prog: B.Tech
-  title: 
+  title: Evaluating microstructure dependent properties 
   remarks: 
 #-------------------------------------------------------------
 - name: Tapish Devendra Garg
   roll: MM17B034
   url: "students/tapish"
   prog: B.Tech
-  title: 
+  title: Knowledge representation in materials domain
   remarks: 
 #-------------------------------------------------------------
 - name: Varun Srinivas 
   roll: MM17B036
   url: "students/varunsrinivas"
   prog: B.Tech
-  title: 
+  title: Physics based ML framework for simulating microstructure evolution
   remarks: 
 #-------------------------------------------------------------
 - name: Nikhil Mula
   roll: MM17M018
   url: "students/nikhilmula"
   prog: M.Tech
-  title: 
+  title: Computational and experimental studies on welding of IN740 alloy
   remarks: 
 #-------------------------------------------------------------
 - name: N. Pavithra
   roll: MM19M021
   url: "students/pavithra"
   prog: M.Tech
-  title: 
+  title: Computational and experimental studies on additive manufacturing of IN718 components
   remarks: 
 #-------------------------------------------------------------
