@@ -332,7 +332,7 @@
   num: MT576
   name: Advanced Topics in Welding
   remarks: PG Elec
-  students: 
+  students: 4
 # -------------------------------------------
 - sem: Jan-May
   year: 2008
@@ -360,7 +360,7 @@
   num: MT576
   name: Advanced Topics in Welding
   remarks: PG Elec
-  students: 
+  students: 4
 # -------------------------------------------
 - sem: Jan-May
   year: 2007
@@ -381,14 +381,14 @@
   num: MM303
   name: Materials Characterization
   remarks: UG Core
-  students: 
+  students: 40
 # -------------------------------------------
 - sem: Jan-May
   year: 2006
   num: MT576
   name: Advanced Topics in Welding
   remarks: PG Elec
-  students: 
+  students: 7
 # -------------------------------------------
 - sem: Jan-May
   year: 2006
