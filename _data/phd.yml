@@ -70,8 +70,8 @@
 # ----------------------------------------------------------
 - name: B. Nithin
   roll: MM15D005
+  year: 2020
   url: "students/nithin"
-  prog: PhD
   title: Thermo-mechanical processing and precipitation behavior of gamma/gamma-prime strengthened cobalt-base superalloys
   remarks: co-guided by Dr. M. Sundararaman
 # ----------------------------------------------------------
