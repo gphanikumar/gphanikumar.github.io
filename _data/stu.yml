@@ -26,13 +26,6 @@
   title: Microstructure evolution and mechanical properties of Nb-Si-Hf and Nb-Si-Zr based high temperature alloys
   remarks: External registrant from DRDO, external guide is Dr. V.V. Satya Prasad, DMRL
 #-------------------------------------------------------------
-- name: B. Nithin
-  roll: MM15D005
-  url: "students/nithin"
-  prog: PhD
-  title: Thermo-mechanical processing and precipitation behavior of gamma/gamma-prime strengthened cobalt-base superalloys
-  remarks: co-guided by Dr. M. Sundararaman
-#-------------------------------------------------------------
 - name: K. Rangan
   roll: MM15D300
   url: "students/rangan"
@@ -114,7 +107,7 @@
   roll: ME17M523
   url: "students/spsenthil"
   prog: Industrial M.Tech
-  title: 
+  title: Semi solid processing in HPDC process to produce high integrity castings
   remarks: Industrial MTech project at Sundaram-Clayton, external guide is Dr. T.V.L.N. Rao
 #-------------------------------------------------------------
 - name: K. Arunkumar
