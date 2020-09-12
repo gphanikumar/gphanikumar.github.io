@@ -2,7 +2,7 @@
   roll: MM15D201
   url: "students/agilan"
   prog: MS + PhD (ext)
-  title: 
+  title: Welding and weldability studies on 2195 Al-Cu-Li alloy
   remarks: External registrant from ISRO, external guide is Dr. D. Sivakumar, VSSC
 #-------------------------------------------------------------
 - name: Deepu Mathew John
@@ -29,8 +29,8 @@
 - name: K. Rangan
   roll: MM15D300
   url: "students/rangan"
-  prog: PhD under ID research program
-  title: 
+  prog: PhD under ID research program in Virtual Manufacturing
+  title: Studies on resistance spot welding of DP steels
   remarks: technical staff of IITM, co-guided by Prof. G.L. Samuel, Dept of ME
 #-------------------------------------------------------------
 - name: Dasari Mohan
@@ -51,7 +51,7 @@
   roll: MM18D032
   url: "students/udaypratap"
   prog: PhD
-  title: 
+  title: Evolution of residual stress in additively manufactured components
   remarks: 
 #-------------------------------------------------------------
 - name: Kotha Satya Tejaswi
