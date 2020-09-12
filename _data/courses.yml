@@ -227,35 +227,35 @@
   num: MT576
   name: Advanced Topics in Welding
   remarks: PG Elec
-  students: 
+  students: 11
 # -------------------------------------------
 - sem: Jan-May
   year: 2013
   num: MM307
   name: Solidification Processing
   remarks: UG Core
-  students: 
+  students: 48
 # -------------------------------------------
 - sem: Jul-Nov
   year: 2012
   num: MM2030
   name: Metallurgical Thermodynamics
   remarks: UG Core
-  students: 
+  students: 38
 # -------------------------------------------
 - sem: Jan-May
   year: 2012
   num: MT576
   name: Advanced Topics in Welding
   remarks: PG Elec
-  students: 
+  students: 12
 # -------------------------------------------
 - sem: Jan-May
   year: 2012
   num: MM204
   name: Introduction to Transport Phenomena
   remarks: UG Core
-  students: 
+  students: 52
 # -------------------------------------------
 - sem: Jan-May
   year: 2011
