@@ -17,6 +17,7 @@ My profile pages are linked on:
  | [Semantic Scholar](https://www.semanticscholar.org/author/Phanikumar-Gandham/40988505)
  | [IRINS Profile](http://iitm.irins.org/profile/50867)
  | [Microsoft Academic Profile](https://academic.microsoft.com/profile/8j87h9j9-8769-4g64-92ei-9h1g5g2h3922/PhanikumarGandham/)
+ | [IITM Publications Profile](https://publications.iitm.ac.in/researcher/phanikumar-gandham)
 
 # Publications
 {% include pubs.html %}
