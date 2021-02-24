@@ -96,12 +96,6 @@
   title: 
   remarks: Guided by Dr. Narasimhan Swaminathan, Dept of ME
 #-------------------------------------------------------------
-- name: S.P. Senthil
-  roll: ME17M523
-  url: "students/spsenthil"
-  prog: Industrial M.Tech
-  title: Semi solid processing in HPDC process to produce high integrity castings
-  remarks: Industrial MTech project at Sundaram-Clayton, external guide is Dr. T.V.L.N. Rao
 #-------------------------------------------------------------
 - name: K. Arunkumar
   roll: ME18S072
@@ -157,5 +151,12 @@
   url: "students/pavithra"
   prog: M.Tech
   title: Computational and experimental studies on additive manufacturing of IN718 components
+  remarks: 
+#-------------------------------------------------------------
+- name: Abhishek Shukla
+  roll: MM21D019
+  url: "students/abhishekshukla"
+  prog: Ph.D.
+  title: Characterization
   remarks: 
 #-------------------------------------------------------------

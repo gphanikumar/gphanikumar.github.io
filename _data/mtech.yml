@@ -117,3 +117,10 @@
   url: "students/dinesh"
   remarks: Sponsored student from TCS
 # ----------------------------------------------------------
+- name: S.P. Senthil
+  roll: ME17M523
+  year: 2020
+  title: Semi solid processing in HPDC process to produce high integrity castings
+  url: "students/spsenthil"
+  remarks: Industrial M.Tech project at Sundaram Clayton, external-guide is Dr.T.V.L.N. Rao
+# ----------------------------------------------------------
