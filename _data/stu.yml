@@ -33,13 +33,6 @@
   title: Phase field simulation of solidification of multi-component alloys
   remarks: 
 #-------------------------------------------------------------
-- name: K. Lakshminarayanan
-  roll: ME11D006
-  url: "students/klnaren"
-  prog: PhD
-  title: 
-  remarks: co-guided by Prof. N. Siva Prasad, retired from Dept of ME
-#-------------------------------------------------------------
 - name: Uday Pratap Singh
   roll: MM18D032
   url: "students/udaypratap"
@@ -95,7 +88,6 @@
   prog: PhD
   title: 
   remarks: Guided by Dr. Narasimhan Swaminathan, Dept of ME
-#-------------------------------------------------------------
 #-------------------------------------------------------------
 - name: K. Arunkumar
   roll: ME18S072
@@ -157,6 +149,6 @@
   roll: MM21D019
   url: "students/abhishekshukla"
   prog: Ph.D.
-  title: Characterization
+  title: Materials Characterization
   remarks: 
 #-------------------------------------------------------------

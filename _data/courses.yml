@@ -1,9 +1,37 @@
+- sem: Jun-Jul
+  year: 2021
+  num: ID2090
+  name: Introduction to Scientific Computing
+  students: 83
+  remarks: BTech Elective, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2021
+  num: MM2090
+  name: Introduction to Scientific Computing
+  students: 38
+  remarks: BTech Elective, alone
+# ----------------------------------------------------
 - sem: Jan-May
   year: 2021
   num: MM5480
   name: Advanced Phase Transformations
   students: 36
   remarks: MTech Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2021
+  num: MM3014
+  name: Undergraduate Research in Materials - 1
+  students: 5
+  remarks: Coordination
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2021
+  num: MM4030
+  name: Undergraduate Research in Materials - 2
+  students: 1
+  remarks: Coordination
 # ----------------------------------------------------
 - sem: July-Nov
   year: 2020
