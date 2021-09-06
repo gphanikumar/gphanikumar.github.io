@@ -124,3 +124,19 @@
   url: "students/spsenthil"
   remarks: Industrial M.Tech project at Sundaram Clayton, external-guide is Dr.T.V.L.N. Rao
 # ----------------------------------------------------------
+- name: Nikhil Mula
+  roll: MM17M018
+  year: 2021
+  url: "students/nikhilmula"
+  prog: M.Tech
+  title: Computational and experimental studies on welding of IN740 alloy
+  remarks:
+#-------------------------------------------------------------
+- name: N. Pavithra
+  roll: MM19M021
+  year: 2021
+  url: "students/pavithra"
+  prog: M.Tech
+  title: Computational and experimental studies on additive manufacturing of IN718 components
+  remarks:
+#-------------------------------------------------------------
