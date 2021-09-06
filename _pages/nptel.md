@@ -87,4 +87,12 @@ As part of [NPTEL MOOC](https://onlinecourses.nptel.ac.in)  on [Analysis and Mod
   * [Numerical Solutions to Thermal Field and Fluid Flow in Welding - Part 2](https://www.youtube.com/watch?v=2tySOXoVYLI&list=PLwrXYEwdhxbXDuqOoJixbRYjZ39VJRHuk&index=20)
   * [Dissimilar Welding](https://www.youtube.com/watch?v=4JzPYMI-W7I&list=PLwrXYEwdhxbXDuqOoJixbRYjZ39VJRHuk&index=21)
 
+
+## Teaching Learning Centre
+
+Here are few videos I prepared for various activities under our [TLC](https://tlc.iitm.ac.in/).
+
+  * [Moodle: Assignments and anonymous feedback](https://www.youtube.com/watch?v=lrYYzrbSaR8)
+  * [Online Quiz: few tips on the process using Moodle](https://www.youtube.com/watch?v=JTMQJiTsLdQ)
+
 Watch this space for updates.

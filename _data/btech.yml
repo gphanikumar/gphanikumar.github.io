@@ -131,3 +131,24 @@
   title: Alloy development through artificial intelligence (ADAI) - development of tool steel
   url: "students/madhurima"
 # ----------------------------------------------------------
+- name: Arsh Bawa
+  roll: MM17B001
+  year: 2021
+  url: "students/arshbawa"
+  prog: B.Tech
+  title: Evaluating microstructure dependent properties
+#-------------------------------------------------------------
+- name: Tapish Devendra Garg
+  roll: MM17B034
+  year: 2021
+  url: "students/tapish"
+  prog: B.Tech
+  title: Knowledge representation in materials domain
+#-------------------------------------------------------------
+- name: Varun Srinivas
+  roll: MM17B036
+  year: 2021
+  url: "students/varunsrinivas"
+  prog: B.Tech
+  title: Physics based ML framework for simulating microstructure evolution
+#-------------------------------------------------------------

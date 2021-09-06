@@ -1,0 +1,9 @@
+#-------------------------------------------------------------
+- name: H. Vishal
+  roll: MM16B023
+  year: 2021
+  url: "students/hvishal"
+  prog: B.Tech in MME + M.Tech in Data Sciences
+  title: Physics based ML framework for simulating microstructure evolution
+  remarks: Co-guided by Dr. Balaraman Ravindran, RBCDSAI
+#-------------------------------------------------------------

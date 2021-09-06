@@ -35,6 +35,33 @@ Here is the list of students who have worked with me in the past.
 {% endfor %}
 </table>
 
+## MS + Ph.D.
+
+<table>
+<tr>
+<th>Name</th>
+<th>Year</th>
+<th>Title</th>
+<th>Remarks</th>
+</tr>
+{% assign students = site.data.msphd | sort: 'year' %}
+{% for item in students %}
+   <tr>
+   <td>
+   <a href="{{item.url}}.html">{{ item.name }}</a> {{ item.roll }}
+   </td>
+   <td>
+   {{ item.year }}
+   </td>
+   <td>
+   {{ item.title }}
+   </td>
+    <td>
+   {{ item.remarks }}
+   </td>
+   </tr>
+{% endfor %}
+</table>
 
 ## M.S. (by Research)
 
@@ -119,6 +146,39 @@ Here is the list of students who have worked with me in the past.
    </tr>
 {% endfor %}
 </table>
+
+## Inter-disciplinary Dual Degree (B.Tech + M.Tech)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Program</th>
+<th>Year</th>
+<th>Title</th>
+<th>Remarks</th>
+</tr>
+{% assign students = site.data.iddd | sort: 'year' %}
+{% for item in students %}
+   <tr>
+   <td>
+   <a href="{{item.url}}.html">{{ item.name }}</a> {{ item.roll }}
+   </td>
+   <td>
+   {{ item.prog }}
+   </td>
+   <td>
+   {{ item.year }}
+   </td>
+   <td>
+   {{ item.title }}
+   </td>
+    <td>
+   {{ item.remarks }}
+   </td>
+   </tr>
+{% endfor %}
+</table>
+
 
 ## B.Tech
 

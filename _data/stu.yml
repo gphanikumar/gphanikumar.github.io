@@ -5,13 +5,6 @@
   title: Welding and weldability studies on 2195 Al-Cu-Li alloy
   remarks: External registrant from ISRO, external guide is Dr. D. Sivakumar, VSSC
 #-------------------------------------------------------------
-- name: Deepu Mathew John
-  roll: MM14D207
-  url: "students/deepu"
-  prog: MS + PhD
-  title: ICME based simulation of microstructure and property evolution in DP steels
-  remarks: 
-#-------------------------------------------------------------
 - name: R. Ramakrishnan
   roll: MM13D013
   url: "students/ramakrishnan"
@@ -46,13 +39,6 @@
   prog: PhD
   title: OpenFOAM modeling of continuous casting steel
   remarks: Under CoExiSt project
-#-------------------------------------------------------------
-- name: Sivaji Karna
-  roll: MM18S011
-  url: "students/sivaji"
-  prog: MS
-  title: Weldability of Haynes 282 alloy
-  remarks: 
 #-------------------------------------------------------------
 - name: N.N. Anoop
   roll: MM19S011
@@ -96,53 +82,11 @@
   title: 
   remarks: External regisrant from Sundaram-Clayton, guided by Prof. Shamit Bakshi, external guide is Dr. T.V.L.N. Rao 
 #-------------------------------------------------------------
-- name: H. Vishal
-  roll: MM16B023
-  url: "students/hvishal"
-  prog: B.Tech in MME + M.Tech in Data Sciences
-  title: Physics based ML framework for simulating microstructure evolution
-  remarks: Co-guided by Dr. Balaraman Ravindran, RBCDSAI
-#-------------------------------------------------------------
-- name: Satyamshreshta Khushwaha
-  roll: MM16B108
-  url: "students/satyam"
-  prog: B.Tech + M.Tech
-  title: OpenFOAM solvers to simulate microstructure evolution using phase field method
-  remarks: 
-#-------------------------------------------------------------
-- name: Arsh Bawa
-  roll: MM17B001
-  url: "students/arshbawa"
-  prog: B.Tech
-  title: Evaluating microstructure dependent properties 
-  remarks: 
-#-------------------------------------------------------------
-- name: Tapish Devendra Garg
-  roll: MM17B034
-  url: "students/tapish"
-  prog: B.Tech
-  title: Knowledge representation in materials domain
-  remarks: 
-#-------------------------------------------------------------
 - name: Varun Srinivas 
   roll: MM17B036
   url: "students/varunsrinivas"
-  prog: B.Tech
+  prog: IDDD B.Tech (MME) + M.Tech (Data Sciences)
   title: Physics based ML framework for simulating microstructure evolution
-  remarks: 
-#-------------------------------------------------------------
-- name: Nikhil Mula
-  roll: MM17M018
-  url: "students/nikhilmula"
-  prog: M.Tech
-  title: Computational and experimental studies on welding of IN740 alloy
-  remarks: 
-#-------------------------------------------------------------
-- name: N. Pavithra
-  roll: MM19M021
-  url: "students/pavithra"
-  prog: M.Tech
-  title: Computational and experimental studies on additive manufacturing of IN718 components
   remarks: 
 #-------------------------------------------------------------
 - name: Abhishek Shukla
@@ -150,5 +94,40 @@
   url: "students/abhishekshukla"
   prog: Ph.D.
   title: Materials Characterization
+  remarks: 
+#-------------------------------------------------------------
+- name: Arunkumar M
+  roll: MM21D001
+  url: "students/arunkumarm"
+  prog: Ph.D. (QIP)
+  title: Welding
+  remarks: 
+#-------------------------------------------------------------
+- name: Jibi K.K.
+  roll: MM21D002
+  url: "students/jibi"
+  prog: Ph.D. (QIP)
+  title: Welding
+  remarks: 
+#-------------------------------------------------------------
+- name: Shazeb
+  roll: MM21S005
+  url: "students/shazeb"
+  prog: M.S.
+  title: Simulation of Manufacturing Processes
+  remarks: 
+#-------------------------------------------------------------
+- name: Anagha Belavadi S.
+  roll: MM18B012
+  url: "students/anagha"
+  prog: B.Tech
+  title: Simulation of Microstructure Evolution
+  remarks: 
+#-------------------------------------------------------------
+- name: Sayali Atul Shilaskar
+  roll: MM18B005
+  url: "students/sayali"
+  prog: B.Tech + M.Tech 
+  title: Simulation of Manufacturing Processes
   remarks: 
 #-------------------------------------------------------------

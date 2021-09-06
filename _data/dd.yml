@@ -76,3 +76,9 @@
   title: Multiscale modelling of additive manufacturing
   url: "students/vishalsubramanian"
 # ----------------------------------------------------------
+- name: Satyamshrestha Khushwaha
+  roll: MM16B108
+  url: "students/satyam"
+  year: 2021
+  title: Phasefield simulations using OpenFOAM
+# ----------------------------------------------------------
