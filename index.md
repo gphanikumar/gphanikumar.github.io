@@ -4,6 +4,9 @@ layout: front
 ---
 Welcome to Gandham Phanikumar's homepage
 
+[GitHub Repos](https://github.com/gphanikumar)
+[LinkedIn](https://www.linkedin.com/in/phanikumar-gandham-97b56a9/)
+
 ![gphani](assets/images/gphani.jpg){:width="200px"}
 
 **Office Location** Room 231, New Academic Complex
