@@ -5,26 +5,12 @@
   title: Welding and weldability studies on 2195 Al-Cu-Li alloy
   remarks: External registrant from ISRO, external guide is Dr. D. Sivakumar, VSSC
 #-------------------------------------------------------------
-- name: R. Ramakrishnan
-  roll: MM13D013
-  url: "students/ramakrishnan"
-  prog: PhD (ext)
-  title: Multiscale modeling and simulation of microstructural evolution during solidification
-  remarks: External registrant from DRDO, external guide is Dr. R. Sankarasubramanian, DMRL
-#-------------------------------------------------------------
 - name: K. Rangan
   roll: MM15D300
   url: "students/rangan"
   prog: PhD under ID research program in Virtual Manufacturing
   title: Studies on resistance spot welding of DP steels
   remarks: technical staff of IITM, co-guided by Prof. G.L. Samuel, Dept of ME
-#-------------------------------------------------------------
-- name: Dasari Mohan
-  roll: MM12D017
-  url: "students/mohan"
-  prog: PhD
-  title: Phase field simulation of solidification of multi-component alloys
-  remarks: 
 #-------------------------------------------------------------
 - name: Uday Pratap Singh
   roll: MM18D032
@@ -44,7 +30,7 @@
   roll: MM19S011
   url: "students/anoop"
   prog: MS
-  title: 
+  title: Simulation and validation of friction stir welding of Al-alloys
   remarks: 
 #-------------------------------------------------------------
 - name: V.S. Hariharan
@@ -71,7 +57,7 @@
 - name: Umair Hussain
   roll: ME19D400
   url: "students/umair"
-  prog: PhD
+  prog: PhD (PMRF)
   title: 
   remarks: Guided by Dr. Narasimhan Swaminathan, Dept of ME
 #-------------------------------------------------------------
@@ -85,8 +71,8 @@
 - name: Varun Srinivas 
   roll: MM17B036
   url: "students/varunsrinivas"
-  prog: IDDD B.Tech (MME) + M.Tech (Data Sciences)
-  title: Physics based ML framework for simulating microstructure evolution
+  prog: IDDD B.Tech (MME) + M.Tech (Computational Engg)
+  title: Physics based ML framework for accelerating microstructure evolution
   remarks: 
 #-------------------------------------------------------------
 - name: Abhishek Shukla
@@ -100,34 +86,20 @@
   roll: MM21D001
   url: "students/arunkumarm"
   prog: Ph.D. (QIP)
-  title: Welding
+  title: Dissimilar welding of materials for high temperature applications
   remarks: 
 #-------------------------------------------------------------
 - name: Jibi K.K.
   roll: MM21D002
   url: "students/jibi"
   prog: Ph.D. (QIP)
-  title: Welding
-  remarks: 
-#-------------------------------------------------------------
-- name: Shazeb
-  roll: MM21S005
-  url: "students/shazeb"
-  prog: M.S.
-  title: Simulation of Manufacturing Processes
-  remarks: 
-#-------------------------------------------------------------
-- name: Anagha Belavadi S.
-  roll: MM18B012
-  url: "students/anagha"
-  prog: B.Tech
-  title: Simulation of Microstructure Evolution
+  title: Joining of materials for heat transfer applications
   remarks: 
 #-------------------------------------------------------------
 - name: Sayali Atul Shilaskar
   roll: MM18B005
   url: "students/sayali"
   prog: B.Tech + M.Tech 
-  title: Simulation of Manufacturing Processes
+  title: ML models for defect criteria relevant to AM
   remarks: 
 #-------------------------------------------------------------

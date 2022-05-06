@@ -23,7 +23,7 @@ layout: default
   * [Studies on semi-solid alloys](ss1.html) (2008-2014)  
   * [Solidification of melts undercooled using electromagnetic levitation](eml.html) (2002-2005, at DLR)
 
-## Welding
+## Welding and Additive Manufacturing
 
   * [Thermal field and stress analysis using Simufact-Welding® and Simufact-Additive®](simu.html) (2018 onwards)
   * [Laser surface alloying, cladding / Laser based additive manufacturing](lsa.html) (1996-2002, at IISc Bangalore and since 2015 at IIT Madras)

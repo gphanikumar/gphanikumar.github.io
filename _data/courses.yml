@@ -1,3 +1,31 @@
+- sem: May-June
+  year: 2022
+  num: ID2090
+  name: Introduction to Scientific Computing
+  students: 41
+  remarks: B.Tech Elective, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2022
+  num: MM5480
+  name: Advanced Phase Transformations
+  students: 33
+  remarks: MTech Core, alone
+# ----------------------------------------------------
+- sem: Jan-May
+  year: 2022
+  num: MM4120
+  name: Project II
+  students: 6
+  remarks: Coordination
+# ----------------------------------------------------
+- sem: Jul-Nov
+  year: 2021
+  num: MM4110
+  name: Project I
+  students: 9
+  remarks: Coordination
+# ----------------------------------------------------
 - sem: Jun-Jul
   year: 2021
   num: ID2090

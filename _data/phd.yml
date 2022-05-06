@@ -82,3 +82,17 @@
   title: Microstructure evolution and mechanical properties of Nb-Si-Hf and Nb-Si-Zr based high temperature alloys
   remarks: External registrant from DRDO, external guide was Dr. V.V. Satya Prasad, DMRL
 # ----------------------------------------------------------
+- name: Dasari Mohan
+  roll: MM12D017
+  year: 2021
+  url: "students/mohan"
+  title: Accelerated simulation of solidification of multicomponent alloys using phase-field approach
+  remarks:
+# ----------------------------------------------------------
+- name: R. Ramakrishnan
+  roll: MM13D013
+  year: 2021
+  url: "students/ramakrishnan"
+  title: Atomic simulation studies on solidification of Ni based binary alloys
+  remarks: External registrant from DRDO, external guide is Dr. R. Sankarasubramanian, DMRL
+# ----------------------------------------------------------
