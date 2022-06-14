@@ -5,3 +5,11 @@
   url: "students/deepu"
   remarks: 
 # ----------------------------------------------------------
+- name: M. Agilan
+  roll: MM15D201
+  year: 2022
+  url: "students/agilan"
+  prog: MS + PhD (ext)
+  title: Welding and weldability studies on 2195 Al-Cu-Li alloy
+  remarks: External registrant from ISRO, external guide was Dr. D. Sivakumar, VSSC
+# ----------------------------------------------------------
