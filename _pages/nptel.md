@@ -16,7 +16,7 @@ As part of [Online BSc in Programming and Data Science](https://onlinedegree.iit
 <th>URL</th>
 <th>Duration (mm.ss)</th>
 </tr>
-{% assign videos = site.data.bscvideos | sort:"seq" %}
+{% assign videos = site.data.bscvideos %}
 {% assign n = 0 %}
 {% for item in videos %}
 {% assign n=n|plus:1 %}
