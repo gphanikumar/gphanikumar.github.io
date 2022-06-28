@@ -16,7 +16,7 @@ As part of [Online BSc in Programming and Data Science](https://onlinedegree.iit
 <th>URL</th>
 <th>Duration (mm.ss)</th>
 </tr>
-{% assign videos = site.data.bscvideos | sort: 'seq' %}
+{% assign videos = site.data.bscvideos | sort:"seq" %}
 {% assign n = 0 %}
 {% for item in videos %}
 {% assign n=n|plus:1 %}
@@ -50,7 +50,7 @@ As part of [NPTEL MOOC](https://onlinecourses.nptel.ac.in/) on [Transport Phenom
 <th>URL</th>
 <th>Duration (mm.ss)</th>
 </tr>
-{% assign videos = site.data.tpvideos | sort: 'seq' %}
+{% assign videos = site.data.tpvideos | sort:"seq" %}
 {% assign n = 0 %}
 {% for item in videos %}
 {% assign n=n|plus:1 %}
@@ -84,7 +84,7 @@ As part of [NPTEL MOOC](https://onlinecourses.nptel.ac.in)  on [Introduction to 
 <th>URL</th>
 <th>Duration (mm.ss)</th>
 </tr>
-{% assign videos = site.data.resvideos | sort: 'seq' %}
+{% assign videos = site.data.resvideos | sort:"seq" %}
 {% assign n = 0 %}
 {% for item in videos %}
 {% assign n=n|plus:1 %}
@@ -117,7 +117,7 @@ Here are few videos I prepared for various activities under our [TLC](https://tl
 <th>URL</th>
 <th>Duration (mm.ss)</th>
 </tr>
-{% assign videos = site.data.tlcvideos | sort: 'seq' %}
+{% assign videos = site.data.tlcvideos | sort:"seq" %}
 {% assign n = 0 %}
 {% for item in videos %}
 {% assign n=n|plus:1 %}
@@ -153,7 +153,7 @@ As part of [NPTEL MOOC](https://onlinecourses.nptel.ac.in)  on [Analysis and Mod
 <th>URL</th>
 <th>Duration (mm.ss)</th>
 </tr>
-{% assign videos = site.data.amwvideos | sort: 'seq' %}
+{% assign videos = site.data.amwvideos | sort:"seq" %}
 {% assign n = 0 %}
 {% for item in videos %}
 {% assign n=n|plus:1 %}
