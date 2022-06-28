@@ -37,12 +37,12 @@
 - title: Linux process management
   url: 2aThmDRvSWU
   duration: 31.54
-  seq: a
+  seq: 10
 # ----------------------------------------------------------
 - title: Shell variables - Part 2
   url: R9vnc8AdVUo
   duration: 48.53
-  seq: 10
+  seq: 6
 # ----------------------------------------------------------
 - title: Shell variables - Part 1
   url: QX5XElFRpck
@@ -52,100 +52,100 @@
 - title: Software management - Part 1
   url: OAEVYgH1IMM
   duration: 24.33
-  seq: b
+  seq: 11
 # ----------------------------------------------------------
 - title: Software management - Part 2
   url: 3saraSGT1i0
   duration: 34.52
-  seq: c
+  seq: 12
 # ----------------------------------------------------------
 - title: Pattern matching - Part 1
   url: 1y85iTaqq8Y
   duration: 39.05
-  seq: d
+  seq: 13
 # ----------------------------------------------------------
 - title: Pattern matching - Part 2
   url: XQUJPRc-7zA
   duration: 37.09
-  seq: e
+  seq: 14
 # ----------------------------------------------------------
 - title: Command line editors - Part 1
   url: NIIZ1cgrO7g
   duration: 28.09
-  seq: f
+  seq: 15
 # ----------------------------------------------------------
 - title: Command line editors - Part 2
   url: HLhza4vZTsI
   duration: 27.46
-  seq: g
+  seq: 16
 # ----------------------------------------------------------
 - title: Command line editors - Part 3
   url: w25zlMXshHw
   duration: 23.26
-  seq: h
+  seq: 17
 # ----------------------------------------------------------
 - title: Overview of shell scripts
   url: YAddHeVpG7I
   duration: 21.59
-  seq: i
+  seq: 18
 # ----------------------------------------------------------
 - title: Bash scripts - Part 1
   url: _WdPclVGNNc
   duration: 28.05
-  seq: j
+  seq: 19
 # ----------------------------------------------------------
 - title: AWK programming - Part 2
   url: g9_ij64u8eQ
   duration: 41.21
-  seq: k2
+  seq: 20
 # ----------------------------------------------------------
 - title: AWK programming - Part 1
   url: k3q-9ntZI4s
   duration: 32.50
-  seq: k1
+  seq: 21
 # ----------------------------------------------------------
 - title: stream editor sed
   url: uCJjZ3cbaAw
   duration: 47.50
-  seq: l
+  seq: 22
 # ----------------------------------------------------------
 - title: Version control - Part 2
   url: B9XVOO9ERis
   duration: 49.20
-  seq: m2
+  seq: 23
 # ----------------------------------------------------------
 - title: Version control - Part 1
   url: tzYx6DKtvGw
   duration: 53.33
-  seq: m1
+  seq: 24
 # ----------------------------------------------------------
 - title: Knowing your hardware
   url: pbb5YQQhqXU
   duration: 22.41
-  seq: n1
+  seq: 25
 # ----------------------------------------------------------
 - title: Prompt string
   url: UBjENhxwpcU
   duration: 15.38
-  seq: n2
+  seq: 26
 # ----------------------------------------------------------
 - title: Some command line utilities
   url: fNf74ycgD9w
   duration: 28.33
-  seq: n3
+  seq: 27
 # ----------------------------------------------------------
 - title: Networking commands and SSH
   url: SxDIXtxR33c
   duration: 41.37
-  seq: n4
+  seq: 28
 # ----------------------------------------------------------
 - title: Automating scripts
   url: kWid87j6qIE
   duration: 17.11
-  seq: n5
+  seq: 29
 # ----------------------------------------------------------
 - title: Managing storage
   url: BvAtNUX7da4
   duration: 13.17
-  seq: n6
+  seq: 30
 # ----------------------------------------------------------
