@@ -61,13 +61,6 @@
   title: 
   remarks: External regisrant from Sundaram-Clayton, guided by Prof. Shamit Bakshi, external guide is Dr. T.V.L.N. Rao 
 #-------------------------------------------------------------
-- name: Varun Srinivas 
-  roll: MM17B036
-  url: "students/varunsrinivas"
-  prog: IDDD B.Tech (MME) + M.Tech (Computational Engg)
-  title: Physics based ML framework for accelerating microstructure evolution
-  remarks: 
-#-------------------------------------------------------------
 - name: Abhishek Shukla
   roll: MM21D019
   url: "students/abhishekshukla"
@@ -89,10 +82,10 @@
   title: Joining of materials for heat transfer applications
   remarks: 
 #-------------------------------------------------------------
-- name: Sayali Atul Shilaskar
-  roll: MM18B005
-  url: "students/sayali"
-  prog: B.Tech + M.Tech 
-  title: ML models for defect criteria relevant to AM
-  remarks: 
+- name: Pradeepthi Pillalamarri
+  roll: MM21S008
+  url: "students/pradeepthi"
+  prog: M.S.
+  title: Experimental and numerical analysis on friction stir welding of AA6082
+  remarks: Prof. Ranjit Bauri is main guide
 #-------------------------------------------------------------
