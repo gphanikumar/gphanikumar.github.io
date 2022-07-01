@@ -92,15 +92,35 @@
 - name: Paturi Sai Teja
   roll: MM21M017
   url: "students/saiteja"
-  prog: M.Tech.
+  prog: M.Tech
   title: Simulation of microstructure evolution during additive manufacturing
   remarks: 
 #-------------------------------------------------------------
 - name: Nalin Rakesh Singh
   roll: MM21M013
   url: "students/nalin"
-  prog: M.Tech.
+  prog: M.Tech
   title: Simulation and analysis of Welding
   remarks: 
 #-------------------------------------------------------------
-
+- name: Nikitha T.
+  roll: MM18B107
+  url: "students/nikitha"
+  prog: B.Tech + M.Tech
+  title: Accelerating simulations of microstructure evolution
+  remarks:
+#-------------------------------------------------------------
+- name: Shreya Smitha
+  roll: MM19B054
+  url: "students/shreya"
+  prog: B.Tech
+  title: Knowledge representation in materials domain using ontologies
+  remarks:
+#-------------------------------------------------------------
+- name: Aditi B
+  roll: MM19B022
+  url: "students/aditi"
+  prog: B.Tech
+  title: Use of graph neural networks for microstructure evolution
+  remarks:
+#-------------------------------------------------------------
