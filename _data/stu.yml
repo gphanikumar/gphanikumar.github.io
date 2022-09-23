@@ -1,63 +1,63 @@
 - name: K. Rangan
   roll: MM15D300
   url: "students/rangan"
-  prog: PhD under ID research program in Virtual Manufacturing
+  prog: Ph.D. under ID research program in Virtual Manufacturing
   title: Studies on resistance spot welding of DP steels
   remarks: technical staff of IITM, co-guided by Prof. G.L. Samuel, Dept of ME
 #-------------------------------------------------------------
 - name: Uday Pratap Singh
   roll: MM18D032
   url: "students/udaypratap"
-  prog: PhD
+  prog: Ph.D.
   title: Evolution of residual stress in additively manufactured components
   remarks: 
 #-------------------------------------------------------------
 - name: Kotha Satya Tejaswi
   roll: MM18D028
   url: "students/tejaswi"
-  prog: PhD
+  prog: Ph.D.
   title: OpenFOAM modeling of continuous casting steel
   remarks: Under CoExiSt project
 #-------------------------------------------------------------
 - name: N.N. Anoop
   roll: MM19S011
   url: "students/anoop"
-  prog: MS
+  prog: M.S.
   title: Simulation and validation of friction stir welding of Al-alloys
   remarks: 
 #-------------------------------------------------------------
 - name: V.S. Hariharan
   roll: MM18D401
   url: "students/hariharan"
-  prog: MS + PhD
+  prog: M.S. + Ph.D.
   title: 
   remarks: co-guided by Prof. B.S. Murty 
 #-------------------------------------------------------------
 - name: M. Tarun Babu
   roll: MM18D017
   url: "students/tarunbabu"
-  prog: PhD (ext)
+  prog: Ph.D. (ext)
   title: Structure property studies on cold sprayed aluminium alloy coatings
   remarks: External registrant from ARCI, external guide is Dr. K. Suresh, ARCI
 #-------------------------------------------------------------
 - name: Addepalli Veera Sreenu
   roll: MM18D024
   url: "students/veerasreenu"
-  prog: PhD (ext)
+  prog: Ph.D. (ext)
   title: 
   remarks: External registrant from RGUKT, guided by Prof. B.S. Murty
 #-------------------------------------------------------------
 - name: Umair Hussain
   roll: ME19D400
   url: "students/umair"
-  prog: PhD (PMRF)
+  prog: Ph.D. (PMRF)
   title: 
   remarks: Guided by Dr. Narasimhan Swaminathan, Dept of ME
 #-------------------------------------------------------------
 - name: K. Arunkumar
   roll: ME18S072
   url: "students/arunkumar"
-  prog: MS (ext)
+  prog: M.S. (ext)
   title: 
   remarks: External regisrant from Sundaram-Clayton, guided by Prof. Shamit Bakshi, external guide is Dr. T.V.L.N. Rao 
 #-------------------------------------------------------------
@@ -115,6 +115,13 @@
   url: "students/aditi"
   prog: B.Tech
   title: Use of graph neural networks for microstructure evolution
+  remarks:
+#-------------------------------------------------------------
+- name: Pinjala Hardhik sivanagalingeswara Rao
+  roll: MM19B043
+  url: "students/hardhik"
+  prog: B.Tech
+  title: Simulations using OpenFOAM + PetSc
   remarks:
 #-------------------------------------------------------------
 - name: Ajithkannan
