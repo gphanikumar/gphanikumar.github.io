@@ -117,3 +117,24 @@
   title: Use of graph neural networks for microstructure evolution
   remarks:
 #-------------------------------------------------------------
+- name: Ajithkannan
+  roll: MMD010
+  url: "students/ajithkannan"
+  prog: Ph.D.
+  title: Additive Manufacturing
+  remarks: Co-guided by Prof. G.L. Samuel (ME)
+#-------------------------------------------------------------
+- name: Krishna Kailas Thombare
+  roll: MM22S001
+  url: "students/thombare"
+  prog: M.S.
+  title: Simulation of die casting process
+  remarks:
+#-------------------------------------------------------------
+- name: Arpita Priyadarshani
+  roll: MM22D004
+  url: "students/arpita"
+  prog: Ph.D.
+  title: Solidification of Al-alloys
+  remarks: Prof. Ranjit Bauri is main guide
+#-------------------------------------------------------------
