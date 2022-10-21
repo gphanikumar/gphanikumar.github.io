@@ -31,6 +31,10 @@ One such study is to obtain the size distribution of bismuth particles during la
 ## References
 Please Note that the soft copies of the papers are subject to copyright restrictions of the respective publishers.
 
+  - Singh UP, Swaminathan S and Phanikumar G (2022), "Thermo-mechanical approach to study the residual stress evolution in part-scale component during laser additive manufacturing of alloy 718", Materials & Design. Vol. 222, pp. 111048.
+  - Shah N, John DM, Rahul M R and Phanikumar G (2022), "Microstructure prediction of eutectic high entropy alloy using physical and computer simulation for additive manufacturing condition", Journal of Alloys and Compounds. , pp. 167268.
+  - Hariharan V, Pramod S, Kesavan D, Murty B and Phanikumar G (2022), "ICME framework to simulate microstructure evolution during laser powder bed fusion of Haynes 282 nickel-based superalloy", Journal of Materials Science.
+  - Zhong C, Narayana Samy VP, Pirch N, Gasser A, Phanikumar G and Schleifenbaum JH (2022), "Heat Treatment Design for IN718 by Laser Metal Deposition with High Deposition Rates: Modeling, Simulation, and Experiments", 3D Printing and Additive Manufacturing.
   - Microstructure evolution during laser surface cladding and remelting of Al-10wt%Bi-10wt%Cu   
 Amresh K. Gupta, Rolf Galun and G. Phanikumar   
 Transactions of Indian Inst. Met. (2007) Vol. 60, Nos. 2-3, April-June, pp.299-302   

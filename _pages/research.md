@@ -25,8 +25,9 @@ layout: default
 
 ## Welding and Additive Manufacturing
 
+  * [Laser based additive manufacturing, Laser surface alloying, cladding](lsa.html) (1996-2002, at IISc Bangalore and since 2015 at IIT Madras)
+
   * [Thermal field and stress analysis using Simufact-Welding® and Simufact-Additive®](simu.html) (2018 onwards)
-  * [Laser surface alloying, cladding / Laser based additive manufacturing](lsa.html) (1996-2002, at IISc Bangalore and since 2015 at IIT Madras)
 
   * [Thermal field and distortion analysis using SYSWELD®](sysw.html) (2010-2015) 
   * [Friction surfacing](fp.html) (2006-2011)
