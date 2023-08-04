@@ -13,3 +13,11 @@
   title: Welding and weldability studies on 2195 Al-Cu-Li alloy
   remarks: External registrant from ISRO, external guide was Dr. D. Sivakumar, VSSC
 # ----------------------------------------------------------
+- name: V.S. Hariharan
+  roll: MM18D401
+  year: 2023
+  url: "students/hariharan"
+  prog: M.S. + Ph.D.
+  title: Integrated Computational Materials Engineering framework for laser powder fusion of Haynes 282
+  remarks: co-guided by Prof. B.S. Murty
+#-------------------------------------------------------------

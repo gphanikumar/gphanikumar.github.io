@@ -159,3 +159,24 @@
   prog: B.Tech
   title: ML models for defect criteria relevant to AM
 #-------------------------------------------------------------
+- name: Shreya Smitha
+  roll: MM19B054
+  year: 2023
+  url: "students/shreya"
+  prog: B.Tech
+  title: Knowledge representation in materials domain using ontologies
+#-------------------------------------------------------------
+- name: Aditi B
+  roll: MM19B022
+  year: 2023
+  url: "students/aditi"
+  prog: B.Tech
+  title: Use of graph neural networks for microstructure evolution
+#-------------------------------------------------------------
+- name: Pinjala Hardhik sivanagalingeswara Rao
+  roll: MM19B043
+  year: 2023
+  url: "students/hardhik"
+  prog: B.Tech
+  title: Simulations using OpenFOAM + PetSc
+#-------------------------------------------------------------

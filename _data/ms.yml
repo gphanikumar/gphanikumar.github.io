@@ -19,3 +19,12 @@
   url: "students/sivaji"
   remarks: 
 # ----------------------------------------------------------
+- name: K. Arunkumar
+  roll: ME18S072
+  year: 2023
+  url: "students/arunkumar"
+  prog: M.S. (ext)
+  title: Study of flow and heat transfer in high pressure die casting cooling channel
+  remarks: External regisrant from Sundaram-Clayton, guided by Prof. Shamit Bakshi, external guide is Dr. T.V.L.N. Rao
+#-------------------------------------------------------------
+

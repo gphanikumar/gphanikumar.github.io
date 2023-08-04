@@ -26,13 +26,6 @@
   title: Simulation and validation of friction stir welding of Al-alloys
   remarks: 
 #-------------------------------------------------------------
-- name: V.S. Hariharan
-  roll: MM18D401
-  url: "students/hariharan"
-  prog: M.S. + Ph.D.
-  title: 
-  remarks: co-guided by Prof. B.S. Murty 
-#-------------------------------------------------------------
 - name: M. Tarun Babu
   roll: MM18D017
   url: "students/tarunbabu"
@@ -53,13 +46,6 @@
   prog: Ph.D. (PMRF)
   title: 
   remarks: Guided by Dr. Narasimhan Swaminathan, Dept of ME
-#-------------------------------------------------------------
-- name: K. Arunkumar
-  roll: ME18S072
-  url: "students/arunkumar"
-  prog: M.S. (ext)
-  title: 
-  remarks: External regisrant from Sundaram-Clayton, guided by Prof. Shamit Bakshi, external guide is Dr. T.V.L.N. Rao 
 #-------------------------------------------------------------
 - name: Abhishek Shukla
   roll: MM21D019
@@ -88,41 +74,6 @@
   prog: M.S.
   title: Experimental and numerical analysis on friction stir welding of AA6082
   remarks: Prof. Ranjit Bauri is main guide
-#-------------------------------------------------------------
-- name: Paturi Sai Teja
-  roll: MM21M017
-  url: "students/saiteja"
-  prog: M.Tech
-  title: Simulation of microstructure evolution during additive manufacturing
-  remarks: 
-#-------------------------------------------------------------
-- name: Nalin Rakesh Singh
-  roll: MM21M013
-  url: "students/nalin"
-  prog: M.Tech
-  title: Simulation and analysis of Welding
-  remarks: 
-#-------------------------------------------------------------
-- name: Shreya Smitha
-  roll: MM19B054
-  url: "students/shreya"
-  prog: B.Tech
-  title: Knowledge representation in materials domain using ontologies
-  remarks:
-#-------------------------------------------------------------
-- name: Aditi B
-  roll: MM19B022
-  url: "students/aditi"
-  prog: B.Tech
-  title: Use of graph neural networks for microstructure evolution
-  remarks:
-#-------------------------------------------------------------
-- name: Pinjala Hardhik sivanagalingeswara Rao
-  roll: MM19B043
-  url: "students/hardhik"
-  prog: B.Tech
-  title: Simulations using OpenFOAM + PetSc
-  remarks:
 #-------------------------------------------------------------
 - name: Ajithkannan
   roll: MMD010
