@@ -1,10 +1,3 @@
-- name: K. Rangan
-  roll: MM15D300
-  url: "students/rangan"
-  prog: Ph.D. under ID research program in Virtual Manufacturing
-  title: Studies on resistance spot welding of DP steels
-  remarks: technical staff of IITM, co-guided by Prof. G.L. Samuel, Dept of ME
-#-------------------------------------------------------------
 - name: Uday Pratap Singh
   roll: MM18D032
   url: "students/udaypratap"
@@ -95,4 +88,32 @@
   prog: Ph.D.
   title: Solidification of Al-alloys
   remarks: Prof. Ranjit Bauri is main guide
+#-------------------------------------------------------------
+- name: Arun C.
+  roll: MM23D002
+  url: "students/arunc"
+  prog: Ph.D.
+  title: Microstructure evolution during additive manufacturing
+  remarks: 
+#-------------------------------------------------------------
+- name: Govindaraj G.
+  roll: MM23D017
+  url: "students/govindaraj"
+  prog: Ph.D. (ext)
+  title: Defect control in casting of Ni-base superalloys
+  remarks: 
+#-------------------------------------------------------------
+- name: Shankar K.
+  roll: MM22M019
+  url: "students/shankar"
+  prog: M.Tech
+  title: Simulation of laser hybrid welding of aluminium alloys using siemens suite of tools
+  remarks: 
+#-------------------------------------------------------------
+- name: Lakshmanan Rama
+  roll: MM23D014
+  url: "students/lakshmanan"
+  prog: M.Tech
+  title: Alloy Development for Light Weighting of Automotive Components
+  remarks: 
 #-------------------------------------------------------------
