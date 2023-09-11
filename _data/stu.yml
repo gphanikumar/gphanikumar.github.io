@@ -31,21 +31,21 @@
   url: "students/veerasreenu"
   prog: Ph.D. (ext)
   title: 
-  remarks: External registrant from RGUKT, guided by Prof. B.S. Murty
+  remarks: External registrant from RGUKT, Prof. B.S. Murty is main guide.
 #-------------------------------------------------------------
 - name: Umair Hussain
   roll: ME19D400
   url: "students/umair"
   prog: Ph.D. (PMRF)
   title: 
-  remarks: Guided by Dr. Narasimhan Swaminathan, Dept of ME
+  remarks: Dr. Narasimhan Swaminathan (ME) is main guide.
 #-------------------------------------------------------------
 - name: Abhishek Shukla
   roll: MM21D019
   url: "students/abhishekshukla"
   prog: Ph.D.
   title: Materials Characterization
-  remarks: 
+  remarks: Dr. E. Hemaprabha is co-guide.
 #-------------------------------------------------------------
 - name: Arunkumar M
   roll: MM21D001
@@ -73,7 +73,7 @@
   url: "students/ajithkannan"
   prog: Ph.D.
   title: Additive Manufacturing
-  remarks: Co-guided by Prof. G.L. Samuel (ME)
+  remarks: Prof. G.L. Samuel (ME) is co-guide
 #-------------------------------------------------------------
 - name: Krishna Kailas Thombare
   roll: MM22S001
