@@ -14,4 +14,12 @@
   prog: IDDD B.Tech (MME) + M.Tech (Computational Engg)
   title: Physics based ML framework for accelerating microstructure evolution
   remarks:
-#-------------------------------------------------------------
+#------------------------------------------------------------
+- name: Chirantandip Mahanta
+  roll: MM19B029
+  year: 2024
+  url: "students/chirantandip"
+  prog: IDDD B.Tech (MME) + M.Tech (Computational Engg)
+  title: Accelerated Phase Field Simulation of Microstructure Evolution
+  remarks:
+#------------------------------------------------------------

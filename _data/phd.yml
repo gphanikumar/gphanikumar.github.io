@@ -96,3 +96,17 @@
   title: Atomic simulation studies on solidification of Ni based binary alloys
   remarks: External registrant from DRDO, external guide is Dr. R. Sankarasubramanian, DMRL
 # ----------------------------------------------------------
+- name: M. Tarun Babu
+  roll: MM18D017
+  year: 2023
+  url: "students/tarunbabu"
+  title: Structure property studies on cold sprayed aluminium alloy coatings
+  remarks: External registrant from ARCI, external guide is Dr. K. Suresh, ARCI
+# ----------------------------------------------------------
+- name: Uday Pratap Singh
+  roll: MM18D032
+  year: 2024
+  url: "students/udaypratap"
+  title: Evolution of residual stress in additively manufactured components
+  remarks:
+#-------------------------------------------------------------

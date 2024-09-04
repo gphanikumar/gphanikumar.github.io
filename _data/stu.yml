@@ -1,9 +1,3 @@
-- name: Uday Pratap Singh
-  roll: MM18D032
-  url: "students/udaypratap"
-  prog: Ph.D.
-  title: Evolution of residual stress in additively manufactured components
-  remarks: 
 #-------------------------------------------------------------
 - name: Kotha Satya Tejaswi
   roll: MM18D028
@@ -18,13 +12,6 @@
   prog: M.S.
   title: Simulation and validation of friction stir welding of Al-alloys
   remarks: 
-#-------------------------------------------------------------
-- name: M. Tarun Babu
-  roll: MM18D017
-  url: "students/tarunbabu"
-  prog: Ph.D. (ext)
-  title: Structure property studies on cold sprayed aluminium alloy coatings
-  remarks: External registrant from ARCI, external guide is Dr. K. Suresh, ARCI
 #-------------------------------------------------------------
 - name: Addepalli Veera Sreenu
   roll: MM18D024
@@ -103,17 +90,17 @@
   title: Defect control in casting of Ni-base superalloys
   remarks: 
 #-------------------------------------------------------------
-- name: Shankar K.
-  roll: MM22M019
-  url: "students/shankar"
+- name: Parth Sarathi Mandal
+  roll: MM23M015
+  url: "students/parth"
   prog: M.Tech
-  title: Simulation of laser hybrid welding of aluminium alloys using siemens suite of tools
+  title: Simulation of microstructure evolution in nickel-based superalloys
   remarks: 
 #-------------------------------------------------------------
-- name: Lakshmanan Rama
-  roll: MM23D014
-  url: "students/lakshmanan"
+- name: Vaishnavi S H
+  roll: MM23M028
+  url: "students/vaishnavi"
   prog: M.Tech
-  title: Alloy Development for Light Weighting of Automotive Components
+  title: The role of hydrogen in steel pipes - ICME approach
   remarks: 
 #-------------------------------------------------------------

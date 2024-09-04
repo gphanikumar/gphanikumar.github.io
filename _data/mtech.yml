@@ -156,4 +156,19 @@
   title: Simulation and analysis of Welding
   remarks:
 #-------------------------------------------------------------
-
+- name: Shankar K.
+  roll: MM22M019
+  year: 2024
+  url: "students/shankar"
+  prog: M.Tech
+  title: Simulation of laser hybrid welding of aluminium alloys using siemens suite of tools
+  remarks:
+#-------------------------------------------------------------
+- name: Lakshmanan Rama
+  roll: MM23D014
+  year: 2024
+  url: "students/lakshmanan"
+  prog: M.Tech
+  title: Alloy Development for Light Weighting of Automotive Components
+  remarks:
+#-------------------------------------------------------------
