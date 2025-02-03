@@ -1,6 +1,141 @@
 
 <table id="qs_table" border="1">
 <tbody>
+<tr id="Hariharan2024" class="entry">
+	<td>Hariharan V, Murty B and Phanikumar G (2024), <i>"Interface response functions for multicomponent alloy solidification - an application to additive manufacturing"</i>, Computational Materials Science.  Vol. 231, pp. 112565.
+	<p class="infolinks">[<a href="javascript:toggleInfo('Hariharan2024','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Hariharan2024','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1016/j.commatsci.2023.112565" target="_blank">DOI</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S0927025623005591" target="_blank">URL</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Hariharan2024" class="abstract noshow">
+	<td><b>Abstract</b>: The near-rapid solidification conditions during additive manufacturing can lead to selection of non-equilibrium phases. Sharp interface models via interface response functions have been used earlier to explain the microstructure selection under such solidification conditions. However, most of the sharp interface models assume linear superposition of contributions of alloying elements without considering the non-linearity associated with the phase diagram. In this report, both planar and dendritic Calphad coupled sharp interface models have been implemented and used to explain the growth-controlled phase selection observed at high solidification velocities relevant to additive manufacturing. The implemented model predicted the growth-controlled phase selection in multicomponent alloys, which the other models with linear phase diagram could not. These models are calculated for different steels and the results are compared with experimental observations.</td>
+</tr>
+<tr id="bib_Hariharan2024" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Hariharan2024,
+  author = {Hariharan, V.S. and Murty, B.S. and Gandham Phanikumar},
+  title = {Interface response functions for multicomponent alloy solidification - an application to additive manufacturing},
+  journal = {Computational Materials Science},
+  year = {2024},
+  volume = {231},
+  pages = {112565},
+  url = {https://www.sciencedirect.com/science/article/pii/S0927025623005591},
+  doi = {10.1016/j.commatsci.2023.112565}
+}
+</pre></td>
+</tr>
+<tr id="Hariharan2024a" class="entry">
+	<td>Hariharan V, Kaushik R, Murty B and Phanikumar G (2024), <i>"Effect of laser scan rotation on the microstructure and mechanical properties of laser powder bed fused Haynes 282"</i>, Materialia.  Vol. 33, pp. 101992.
+	<p class="infolinks">[<a href="javascript:toggleInfo('Hariharan2024a','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Hariharan2024a','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1016/j.mtla.2023.101992" target="_blank">DOI</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S2589152923003198" target="_blank">URL</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Hariharan2024a" class="abstract noshow">
+	<td><b>Abstract</b>: Haynes 282 is a weldable, gamma-prime strengthened Ni-based superalloy and is a suitable candidate for aerospace and power-generation applications. Laser powder bed fusion (LPBF) of Haynes 282 is gaining attention recently due to its superior mechanical properties than its conventional counterparts. In spite of the superior mechanical properties, there are significant challenges concerning crystallographic anisotropy. One of the critical but less studied parameters that influence crystallographic anisotropy is the laser scan rotation angle. This study investigates the effect of laser scan rotation angle on the microstructure and subsequently on the mechanical properties. The samples fabricated with 90° scan rotation exhibited stronger texture while the samples with 137° rotation had weaker texture than samples with 67°. Further, three-dimensional Finite difference-Monte Carlo simulations were performed to understand the microstructure evolution with varying process parameters. The experimental and simulated microstructures are quantitatively compared using 2-point correlations. The texture and grain morphology evolution are explained based on melt pool morphology and microstructure simulations. Mechanical properties of as-built and aged samples are estimated using theoretical models and agree well with the experimental results.</td>
+</tr>
+<tr id="bib_Hariharan2024a" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Hariharan2024a,
+  author = {Hariharan, V.S. and Ramit Kaushik and Murty, B.S. and Gandham Phanikumar},
+  title = {Effect of laser scan rotation on the microstructure and mechanical properties of laser powder bed fused Haynes 282},
+  journal = {Materialia},
+  year = {2024},
+  volume = {33},
+  pages = {101992},
+  url = {https://www.sciencedirect.com/science/article/pii/S2589152923003198},
+  doi = {10.1016/j.mtla.2023.101992}
+}
+</pre></td>
+</tr>
+<tr id="Hussain2024" class="entry">
+	<td>Hussain U, Swaminathan N and Phanikumar G (2024), <i>"Numerical Voltammetry of Phase Separating Materials Using Phase Field Modeling"</i>, Journal of The Electrochemical Society.  Vol. 171, pp. 070502.
+	<p class="infolinks">[<a href="javascript:toggleInfo('Hussain2024','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Hussain2024','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1149/1945-7111/ad59cc" target="_blank">DOI</a>] [<a href="https://iopscience.iop.org/article/10.1149/1945-7111/ad59cc/meta" target="_blank">URL</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Hussain2024" class="abstract noshow">
+	<td><b>Abstract</b>: Higher capacity materials, such as Si and Sn are known to have phase separating behavior during the (de)lithiation. While initial models for lithiation in graphite electrode were based on single phase diffusion, with the introduction of Si and Sn, disposition of the models has shifted to the two-phase diffusion. It is important to understand the interaction of various phenomenon in materials which show phase change during (dis)charging cycles. In this work, we present a phase field model to simulate two-phase lithiation. This model is used to study the electrochemical response of the system by conducting numerical voltammetry. The main goal of this effort is to highlight the difference in electrochemical response occurring during single-phase diffusion and two-phase diffusion and explain the ensuing physics. Furthermore, effect of elasticity which governs the phase-change process and also alters corresponding voltammograms is also studied in detail. The voltammograms show clear shift in current peaks' size and position for the changing diffusion behavior. Also as elasticity affects the two-phase diffusion, change in nucleation timing and diffusion rate are visible in voltammograms. Additionally, it is also observed how elasticity can cease the phase separation behavior and voltammogram for two-phase diffusion can become identical to single-phase diffusion.</td>
+</tr>
+<tr id="bib_Hussain2024" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Hussain2024,
+  author = {Umair Hussain and Narasimhan Swaminathan and Gandham Phanikumar},
+  title = {Numerical Voltammetry of Phase Separating Materials Using Phase Field Modeling},
+  journal = {Journal of The Electrochemical Society},
+  year = {2024},
+  volume = {171},
+  pages = {070502},
+  url = {https://iopscience.iop.org/article/10.1149/1945-7111/ad59cc/meta},
+  doi = {10.1149/1945-7111/ad59cc}
+}
+</pre></td>
+</tr>
+<tr id="Hussain2024a" class="entry">
+	<td>Hussain U, Swaminathan N and Phanikumar G (2024), <i>"Voltammetric Study of Phase Separating Anode Materials in Li-Ion Battery Using Phase Field Model"</i>, ECS Meeting Abstracts.  Vol. MA2024-01, pp. 296.
+	<p class="infolinks">[<a href="javascript:toggleInfo('Hussain2024a','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Hussain2024a','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1149/MA2024-012296mtgabs" target="_blank">DOI</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Hussain2024a" class="abstract noshow">
+	<td><b>Abstract</b>: The increasing demand for higher energy capacity in lithium-ion batteries has underscored the significance of modeling lithiation with alternative electrode materials, such as silicon (Si) and tin (Sn). This research addresses the need for comprehensive insights into the (dis)charging process, particularly focusing on the intricate phase transformations in the anode. Phase-field modeling has proven effective in capturing these transformations [2], revealing volumetric deformations of up to 300% during (dis)charging cycles [1]. Unfortunately, these deformations compromise material integrity, leading to reduced battery cycle life and reliability.<p>To address these challenges, our work presents a novel framework for modeling lithiation in materials exhibiting two-phase diffusion using phase field modeling. Unlike previous models limited to single-phase diffusion, our framework provides a more realistic representation of the diffusion process. This realism is achieved by incorporating the time-dependent voltage applied to the anode, a crucial factor in understanding the electrochemical response during lithiation [3].<p>Furthermore, we leverage the currents generated during the lithiation and delithiation processes to conduct a comprehensive voltammetric study. This study goes beyond existing research by considering the impact of phase separation on the currents developed during Li-ion battery operation. Our findings aim to contribute valuable insights into optimizing battery performance and addressing challenges associated with phase transformations, ultimately advancing the development of high-capacity anodes for lithium-ion batteries.</td>
+</tr>
+<tr id="bib_Hussain2024a" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Hussain2024a,
+  author = {Umair Hussain and Narasimhan Swaminathan and Gandham Phanikumar},
+  title = {Voltammetric Study of Phase Separating Anode Materials in Li-Ion Battery Using Phase Field Model},
+  journal = {ECS Meeting Abstracts},
+  year = {2024},
+  volume = {MA2024-01},
+  pages = {296},
+  doi = {10.1149/MA2024-012296mtgabs}
+}
+</pre></td>
+</tr>
+<tr id="Mangalarapu2024" class="entry">
+	<td>Mangalarapu TB, Kumar S, Ramakrishna M, Phanikumar G and Koppoju S (2024), <i>"Effect of Initial Powder Condition on Precipitation Behavior in Cold Sprayed Al7075 Alloy Coatings"</i>, Journal of Thermal Spray Technology. 
+	<p class="infolinks">[<a href="javascript:toggleInfo('Mangalarapu2024','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Mangalarapu2024','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1007/s11666-024-01811-6" target="_blank">DOI</a>] [<a href="https://link.springer.com/article/10.1007/s11666-024-01811-6" target="_blank">URL</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Mangalarapu2024" class="abstract noshow">
+	<td><b>Abstract</b>: This study explores the potential of cold spray technology for repairing high-strength Al7075 alloy components, particularly in the aerospace industry. The gas-atomized powder contains a dendritic cell structure with solutes segregated at the dendritic cell boundaries. Thus, direct aging of atomized powder fails to induce the formation of strengthened precipitates. Therefore, the effect of different powder pre-treatments on the deposition efficiency, microstructure, and aging behavior of the coatings was investigated. Cold spray coatings were deposited using as-received powder, solutionized, and solutionized + aged powders, revealing a significant improvement in thickness for coatings obtained using solutionized (110%) and solutionized + aged (80%) powders compared to the coating from the as-received atomized powder. Further, coatings deposited using as-received, solutionized, and solutionized + aged powders, were aged at 120 °C for various durations and the aging response of different coatings were studied. Microstructural studies revealed that gas-atomized powders exhibited dendritic structures with segregated solutes. Solutionizing eliminated the dendritic features, promoting deposition efficiency upon cold spraying. Aging of the coating from the solutionized powder led to the formation of ultrafine η' precipitates (29 ± 8 nm length, 2 ± 1 nm diameter) at peak-aged condition (after 8 h). These findings demonstrate the effectiveness of powder pre-treatment in tailoring the microstructure and deposition behavior of cold-sprayed Al7075 coatings, offering a promising approach for repair applications.</td>
+</tr>
+<tr id="bib_Mangalarapu2024" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Mangalarapu2024,
+  author = {Tarun Babu Mangalarapu and Kumar, S and Ramakrishna, M and Gandham Phanikumar and Suresh Koppoju},
+  title = {Effect of Initial Powder Condition on Precipitation Behavior in Cold Sprayed Al7075 Alloy Coatings},
+  journal = {Journal of Thermal Spray Technology},
+  year = {2024},
+  url = {https://link.springer.com/article/10.1007/s11666-024-01811-6},
+  doi = {10.1007/s11666-024-01811-6}
+}
+</pre></td>
+</tr>
+<tr id="Uday2024" class="entry">
+	<td>Singh UP, Shukla A, Swaminathan S and Phanikumar G (2024), <i>"Effect of build orientations on residual stress, microstructure, and mechanical properties of additively manufactured alloy-718 components"</i>, Journal of Manufacturing Processes.  Vol. 113, pp. 1-15.
+	<p class="infolinks">[<a href="javascript:toggleInfo('Uday2024','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Uday2024','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1016/j.jmapro.2024.01.047" target="_blank">DOI</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S1526612524000641" target="_blank">URL</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Uday2024" class="abstract noshow">
+	<td><b>Abstract</b>: During the laser powder bed fusion(L-PBF) process, the rapid solidification conditions coupled with repeated heating and cooling cycles constrain the design potential and printability of complex-shaped structures, especially for part-scale components. Process-induced residual stress, porosity, and crystallographic texture are the most challenging obstacles when designing quality components using this process. These defects also have a detrimental impact on the quality and structural durability of the deposited parts. To comprehend the coupled effect of these determinants on the mechanical performance of various orientated components, we perform a sequentially coupled thermo-mechanical simulation to obtain the residual stress evolution during the deposition as well as on printed coupons after the extraction of the support structure. Simulated outcomes have been verified using X-ray diffraction, and there is a good convergence between simulated and experimental values with a 10% maximum difference. X-ray tomography and Electron back scattered diffraction(EBSD) techniques were utilized to quantify the process-induced porosity(distribution and size) and crystallographic texture in the solidified component, respectively. The mechanical performance of the deposited components was evaluated using uniaxial tensile tests. The cracking behavior in fractured samples was studied using SEM-based fractography. Due to more number of repeated thermal cycles, the vertically deposited sample had higher residual stress, larger grains, and thus lower strength.</td>
+</tr>
+<tr id="bib_Uday2024" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Uday2024,
+  author = {Uday Pratap Singh and Abhishek Shukla and Srinivasan Swaminathan and Gandham Phanikumar},
+  title = {Effect of build orientations on residual stress, microstructure, and mechanical properties of additively manufactured alloy-718 components},
+  journal = {Journal of Manufacturing Processes},
+  year = {2024},
+  volume = {113},
+  pages = {1--15},
+  url = {https://www.sciencedirect.com/science/article/pii/S1526612524000641},
+  doi = {10.1016/j.jmapro.2024.01.047}
+}
+</pre></td>
+</tr>
 <tr id="Arunkumar2023" class="entry">
 	<td>Arunkumar K, Bakshi S, Phanikumar G and Rao T (2023), <i>"Study of flow and heat transfer in high pressure die casting cooling channel"</i>, Metallurgical and Materials Transactions B.  Vol. 54, pp. 1665-1674.
 	<p class="infolinks">[<a href="javascript:toggleInfo('Arunkumar2023','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Arunkumar2023','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1007/s11663-023-02785-6" target="_blank">DOI</a>] [<a href="https://link.springer.com/article/10.1007/s11663-023-02785-6" target="_blank">URL</a>]</p>
@@ -44,6 +179,27 @@
   pages = {170543},
   url = {https://www.sciencedirect.com/science/article/pii/S0925838823018467},
   doi = {10.1016/j.jallcom.2023.170543}
+}
+</pre></td>
+</tr>
+<tr id="Beniwal2023" class="entry">
+	<td>Beniwal D, Shivam V, Palasyuk O, Kramer MJ, Phanikumar G and Ray PK (2023), <i>"EDS-PhaSe: Phase segmentation and analysis from EDS elemental map images using markers of elemental segregation"</i>, Metallography, Microstructure and Analysis. 
+	<p class="infolinks">[<a href="javascript:toggleInfo('Beniwal2023','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Beniwal2023','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1007/s13632-023-01020-7" target="_blank">DOI</a>] [<a href="https://link.springer.com/article/10.1007/s13632-023-01020-7" target="_blank">URL</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Beniwal2023" class="abstract noshow">
+	<td><b>Abstract</b>: Scanning electron microscopy (SEM), combined with energy-dispersive spectroscopy (EDS), is an extensively used technique for in-depth microstructural analysis. Here, we present the EDS-Phase Segmentation (EDS-PhaSe) tool that enables phase segmentation and phase analysis using the EDS elemental map images. It converts the EDS map images into estimated composition maps for calculating markers of selective elemental redistribution in the scanned area and creates a phase-segmented micrograph while providing approximate fraction and composition of each identified phase. EDS-PhaSe offers two unique advantages. Firstly, it enables the direct processing of EDS elemental map images without requiring any raw or proprietary data/software, thereby allowing the analysis of EDS results available in the published literature as images. Secondly, it enables segmentation and analysis of phases even when the phase contrast is missing in backscattered micrographs, assisting in correlating the XRD and SEM-EDS data as shown in this work for a AlCoCrFeNi high-entropy alloy.</td>
+</tr>
+<tr id="bib_Beniwal2023" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Beniwal2023,
+  author = {Dishant Beniwal and Vikas Shivam and Olena Palasyuk and Matthew J Kramer and Gandham Phanikumar and Pratik K Ray},
+  title = {EDS-PhaSe: Phase segmentation and analysis from EDS elemental map images using markers of elemental segregation},
+  journal = {Metallography, Microstructure and Analysis},
+  year = {2023},
+  url = {https://link.springer.com/article/10.1007/s13632-023-01020-7},
+  doi = {10.1007/s13632-023-01020-7}
 }
 </pre></td>
 </tr>
@@ -197,6 +353,27 @@
   volume = {234},
   url = {https://www.sciencedirect.com/science/article/pii/S1359646223002671},
   doi = {10.1016/j.scriptamat.2023.115543}
+}
+</pre></td>
+</tr>
+<tr id="Kushwaha2023" class="entry">
+	<td>Kushwaha S, Agilan M, Rahul MR and Phanikumar G (2023), <i>"Study of TIG weld microstructure formation in Inconel 718 alloy using ICME approach"</i>, Integrating Materials and Manufacturing Innovation. 
+	<p class="infolinks">[<a href="javascript:toggleInfo('Kushwaha2023','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Kushwaha2023','bibtex')">BibTeX</a>] [<a href="https://doi.org/10.1007/s40192-023-00317-3" target="_blank">DOI</a>] [<a href="https://link.springer.com/article/10.1007/s40192-023-00317-3" target="_blank">URL</a>]</p>
+	</td>
+</tr>
+<tr id="abs_Kushwaha2023" class="abstract noshow">
+	<td><b>Abstract</b>: The detrimental phase formation in Inconel 718 weld microstructure depends on welding conditions. This study uses the FEM simulation of the welding process to establish the variation of temperature gradient and cooling rate in the weld pool boundary as a function of welding current and speed. The microstructure evolution in the weld pool was established using phase field simulation as a function of temperature gradient and cooling rate variation. Thermal simulations ensured experimental validation of the macro and micro-scale simulations. The elemental segregation in the interdendritic region is analyzed, and a phase map was proposed to identify the safe domain for the welding process. The micro-segregation maps guide the selection of optimum welding process parameters. The current study develops and verifies an ICME framework for welding process optimization.</td>
+</tr>
+<tr id="bib_Kushwaha2023" class="bibtex noshow">
+<td><b>BibTeX</b>:
+<pre>
+@article{Kushwaha2023,
+  author = {Shambhu Kushwaha and Agilan, M and Rahul, M. R. and Gandham Phanikumar},
+  title = {Study of TIG weld microstructure formation in Inconel 718 alloy using ICME approach},
+  journal = {Integrating Materials and Manufacturing Innovation},
+  year = {2023},
+  url = {https://link.springer.com/article/10.1007/s40192-023-00317-3},
+  doi = {10.1007/s40192-023-00317-3}
 }
 </pre></td>
 </tr>
