@@ -48,13 +48,6 @@
   title: Joining of materials for heat transfer applications
   remarks: 
 #-------------------------------------------------------------
-- name: Pradeepthi Pillalamarri
-  roll: MM21S008
-  url: "students/pradeepthi"
-  prog: M.S.
-  title: Experimental and numerical analysis on friction stir welding of AA6082
-  remarks: Prof. Ranjit Bauri is main guide
-#-------------------------------------------------------------
 - name: Ajithkannan
   roll: MMD010
   url: "students/ajithkannan"
@@ -89,6 +82,13 @@
   prog: Ph.D. (ext)
   title: Defect control in casting of Ni-base superalloys
   remarks: 
+#-------------------------------------------------------------
+- name: Mohammed Fazalullah
+  roll: MM24D952
+  url: "students/fazal"
+  prog: Ph.D. 
+  title: Advanced Alloy Design using Machine Learning
+  remarks: JDP with Deakin University, Prof. Nick Birbilis as joint-guide
 #-------------------------------------------------------------
 - name: Parth Sarathi Mandal
   roll: MM23M015
