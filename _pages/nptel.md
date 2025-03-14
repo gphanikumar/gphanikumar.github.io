@@ -7,7 +7,7 @@ layout: default
 
 ## System Commands
 
-As part of [Online BSc in Programming and Data Science](https://onlinedegree.iitm.ac.in/) on [System Commands](https://study.iitm.ac.in/course_pages/BSSE2001.html), the youtube links for videos are linked here:
+As part of [Online BSc in Programming and Data Science](https://onlinedegree.iitm.ac.in/) on [System Commands](https://study.iitm.ac.in/ds/course_pages/BSSE2001.html), the youtube links for videos are linked here:
 
 <table>
 <tr>
