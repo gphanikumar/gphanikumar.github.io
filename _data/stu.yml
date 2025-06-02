@@ -6,26 +6,12 @@
   title: OpenFOAM modeling of continuous casting steel
   remarks: 
 #-------------------------------------------------------------
-- name: N.N. Anoop
-  roll: MM19S011
-  url: "students/anoop"
-  prog: M.S.
-  title: Simulation and validation of friction stir welding of Al-alloys
-  remarks: 
-#-------------------------------------------------------------
 - name: Addepalli Veera Sreenu
   roll: MM18D024
   url: "students/veerasreenu"
   prog: Ph.D. (ext)
   title: 
   remarks: External registrant from RGUKT, Prof. B.S. Murty is main guide.
-#-------------------------------------------------------------
-- name: Umair Hussain
-  roll: ME19D400
-  url: "students/umair"
-  prog: Ph.D. (PMRF)
-  title: 
-  remarks: Dr. Narasimhan Swaminathan (ME) is main guide.
 #-------------------------------------------------------------
 - name: Abhishek Shukla
   roll: MM21D019
@@ -39,14 +25,14 @@
   url: "students/arunkumarm"
   prog: Ph.D. (QIP)
   title: Dissimilar welding of materials for high temperature applications
-  remarks: 
+  remarks: QIP scholar from NSS College of Engineering, Palakkad
 #-------------------------------------------------------------
 - name: Jibi K.K.
   roll: MM21D002
   url: "students/jibi"
   prog: Ph.D. (QIP)
   title: Joining of materials for heat transfer applications
-  remarks: 
+  remarks: QIP scholar from Govt Engineering College, Thrissur
 #-------------------------------------------------------------
 - name: Ajithkannan
   roll: MMD010
@@ -74,7 +60,7 @@
   url: "students/govindaraj"
   prog: Ph.D. (ext)
   title: Defect control in casting of Ni-base superalloys
-  remarks: 
+  remarks: External registrant from ABI-Showatech
 #-------------------------------------------------------------
 - name: Mohammed Fazalullah
   roll: MM24D952
@@ -83,17 +69,10 @@
   title: Advanced Alloy Design using Machine Learning
   remarks: JDP with Deakin University, Prof. Nick Birbilis as joint-guide
 #-------------------------------------------------------------
-- name: Parth Sarathi Mandal
-  roll: MM23M015
-  url: "students/parth"
+- name: Rayapu Reddy Kadiri
+  roll: MM24M017
+  url: "students/rayapu"
   prog: M.Tech
-  title: Simulation of microstructure evolution in nickel-based superalloys
-  remarks: 
-#-------------------------------------------------------------
-- name: Vaishnavi S H
-  roll: MM23M028
-  url: "students/vaishnavi"
-  prog: M.Tech
-  title: The role of hydrogen in steel pipes - ICME approach
+  title: Microstructure evolution in cold spray deposited IN718 nickel-based superalloy
   remarks: 
 #-------------------------------------------------------------
