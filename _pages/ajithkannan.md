@@ -1,11 +1,11 @@
 ---
 permalink: "students/ajithkannan.html"
-title: Ajithkannan
+title: R. Ajithkannan
 layout: students
 ---
-# Ajithkannan
+# R. Ajithkannan
 
-Roll No: MM22D001
+Roll No: MM22D010
 
 Jointly with Prof. G.L. Samuel (ME)
 
