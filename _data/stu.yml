@@ -13,20 +13,6 @@
   title: Materials Characterization
   remarks: Dr. E. Hemaprabha is co-guide.
 #-------------------------------------------------------------
-- name: Arunkumar M
-  roll: MM21D001
-  url: "students/arunkumarm"
-  prog: Ph.D. (QIP)
-  title: Dissimilar welding of materials for high temperature applications
-  remarks: QIP scholar from NSS College of Engineering, Palakkad
-#-------------------------------------------------------------
-- name: Jibi K.K.
-  roll: MM21D002
-  url: "students/jibi"
-  prog: Ph.D. (QIP)
-  title: Joining of materials for heat transfer applications
-  remarks: QIP scholar from Govt Engineering College, Thrissur
-#-------------------------------------------------------------
 - name: R.Ajithkannan
   roll: MM22D010
   url: "students/ajithkannan"
@@ -55,10 +41,17 @@
   title: Defect control in casting of Ni-base superalloys
   remarks: External registrant from ABI-Showatech
 #-------------------------------------------------------------
-- name: Rayapu Reddy Kadiri
-  roll: MM24M017
-  url: "students/rayapu"
+- name: Srikanth Kuppannagari
+  roll: MM25M023
+  url: "students/ksrikanth"
   prog: M.Tech
-  title: Microstructure evolution in cold spray deposited IN718 nickel-based superalloy
+  title: 
+  remarks: 
+#-------------------------------------------------------------
+- name: Gundluru Eswar Prasanth
+  roll: MM25M017
+  url: "students/eswar"
+  prog: M.Tech
+  title: 
   remarks: 
 #-------------------------------------------------------------

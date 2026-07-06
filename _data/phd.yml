@@ -125,4 +125,19 @@
   title: OpenFOAM modeling of continuous casting steel
   remarks:
 #-------------------------------------------------------------
-
+- name: Arunkumar M
+  roll: MM21D001
+  year: 2026
+  url: "students/arunkumarm"
+  prog: Ph.D. (QIP)
+  title: Dissimilar welding of Haynes 282 with AISI321 and Inconel 740H
+  remarks: QIP scholar from NSS College of Engineering, Palakkad
+#-------------------------------------------------------------
+- name: Jibi K.K.
+  roll: MM21D002
+  year: 2026
+  url: "students/jibi"
+  prog: Ph.D. (QIP)
+  title: Metal joining in high temperature compact type heat exchangers
+  remarks: QIP scholar from Govt Engineering College, Thrissur
+#-------------------------------------------------------------
